@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestCaseResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core">
+  <_systemId>44191cec-22ce-4c71-96ee-31fb7599e5c3</_systemId>
+  <_referenceID>ac603244-bdc0-4637-a9bc-293b433c149f</_referenceID>
+  <_testVerdict>Pass</_testVerdict>
+  <_testMessage i:nil="true" />
+  <_virtualUser>VirtualUser</_virtualUser>
+  <_startTime>2017-12-23T07:36:56.7791095-08:00</_startTime>
+  <_endTime>2017-12-23T07:37:07.1000411-08:00</_endTime>
+  <_passed>1</_passed>
+  <_failed>0</_failed>
+  <_errored>0</_errored>
+  <_inconclusive>0</_inconclusive>
+  <_didnotexecute>0</_didnotexecute>
+  <_testScriptResults>
+    <TestScriptResult i:type="TestStepResult">
+      <_systemId>91e03128-56ca-4134-9556-a1c87a814e92</_systemId>
+      <_referenceID>9095928a-96bc-411a-90a3-8c88842014d6</_referenceID>
+      <_testVerdict>Pass</_testVerdict>
+      <_testMessage>Success</_testMessage>
+      <_virtualUser>VirtualUser</_virtualUser>
+      <_startTime>2017-12-23T07:36:56.8491141-08:00</_startTime>
+      <_endTime>2017-12-23T07:37:07.0970418-08:00</_endTime>
+      <_testChecks />
+      <_testWarnings />
+      <_testData />
+    </TestScriptResult>
+  </_testScriptResults>
+</TestCaseResult>

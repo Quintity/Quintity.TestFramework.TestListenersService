@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestSuiteResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core">
+  <_systemId>18566d1b-d0a5-4c31-9c5b-6a7732e7053f</_systemId>
+  <_referenceID>d0b79f72-1b62-4027-b49e-ad91eebec338</_referenceID>
+  <_testVerdict>Pass</_testVerdict>
+  <_testMessage i:nil="true" />
+  <_virtualUser>VirtualUser</_virtualUser>
+  <_startTime>2017-12-23T07:29:34.9231747-08:00</_startTime>
+  <_endTime>2017-12-23T07:30:27.2343146-08:00</_endTime>
+  <_passed>1</_passed>
+  <_failed>0</_failed>
+  <_errored>0</_errored>
+  <_inconclusive>0</_inconclusive>
+  <_didnotexecute>0</_didnotexecute>
+  <_testScriptResults>
+    <TestScriptResult i:type="TestCaseResult">
+      <_systemId>6fcf8d51-e618-4dad-9c14-57f1746ee19f</_systemId>
+      <_referenceID>ac603244-bdc0-4637-a9bc-293b433c149f</_referenceID>
+      <_testVerdict>Pass</_testVerdict>
+      <_testMessage i:nil="true" />
+      <_virtualUser>VirtualUser</_virtualUser>
+      <_startTime>2017-12-23T07:29:34.9251765-08:00</_startTime>
+      <_endTime>2017-12-23T07:30:27.2333159-08:00</_endTime>
+      <_passed>1</_passed>
+      <_failed>0</_failed>
+      <_errored>0</_errored>
+      <_inconclusive>0</_inconclusive>
+      <_didnotexecute>0</_didnotexecute>
+      <_testScriptResults>
+        <TestScriptResult i:type="TestStepResult">
+          <_systemId>86495783-de2f-488e-9234-e07691b9adaa</_systemId>
+          <_referenceID>9095928a-96bc-411a-90a3-8c88842014d6</_referenceID>
+          <_testVerdict>Pass</_testVerdict>
+          <_testMessage>Success</_testMessage>
+          <_virtualUser>VirtualUser</_virtualUser>
+          <_startTime>2017-12-23T07:29:35.0211966-08:00</_startTime>
+          <_endTime>2017-12-23T07:30:27.2293147-08:00</_endTime>
+          <_testChecks />
+          <_testWarnings />
+          <_testData />
+        </TestScriptResult>
+      </_testScriptResults>
+    </TestScriptResult>
+  </_testScriptResults>
+  <_postProcessorResult i:nil="true" />
+  <_preProcessorResult i:nil="true" />
+</TestSuiteResult>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestSuite xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core">
+  <_systemId>aae0d092-a90f-4344-b1ed-37d241e7a02f</_systemId>
+  <_parentID>d0b79f72-1b62-4027-b49e-ad91eebec338</_parentID>
+  <_userId i:nil="true" />
+  <_title>ListenerService2</_title>
+  <_description i:nil="true" />
+  <_status>Active</_status>
+  <_functionalArea i:nil="true" />
+  <_reference i:nil="true" />
+  <_author>jmoth</_author>
+  <_created>2018-01-17T15:53:22.0829421-08:00</_created>
+  <_testProperties />
+  <_testScriptObjects>
+    <TestScriptObject i:type="TestCase">
+      <_systemId>4b03524b-06b0-41fc-aeb7-81442fc80d75</_systemId>
+      <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
+      <_userId i:nil="true" />
+      <_title>Random timeout 2</_title>
+      <_description i:nil="true" />
+      <_status>Active</_status>
+      <_functionalArea i:nil="true" />
+      <_reference i:nil="true" />
+      <_author>jmoth</_author>
+      <_created>2018-01-17T15:53:22.0829421-08:00</_created>
+      <_testProperties />
+      <_testScriptObjects>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>4e745f68-10dc-4fc0-b8e6-18f657f35828</_systemId>
+          <_parentID>4b03524b-06b0-41fc-aeb7-81442fc80d75</_parentID>
+          <_userId i:nil="true" />
+          <_title>Untitled test step</_title>
+          <_description></_description>
+          <_status>Active</_status>
+          <_expectedBehaviour></_expectedBehaviour>
+          <_testType>Automated</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly>[TestAssemblies]\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
+            <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
+            <_testMethod>RandomTimeout</_testMethod>
+            <_testParameters>
+              <TestParameter>
+                <DisplayName>minTime</DisplayName>
+                <Name>minTime</Name>
+                <ValueAsString>1000</ValueAsString>
+                <TypeAsString>System.Int32</TypeAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>maxTime</DisplayName>
+                <Name>maxTime</Name>
+                <ValueAsString>10000</ValueAsString>
+                <TypeAsString>System.Int32</TypeAsString>
+              </TestParameter>
+            </_testParameters>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+      </_testScriptObjects>
+      <_tags i:nil="true" />
+      <_knownDefects>false</_knownDefects>
+      <_defects i:nil="true" />
+      <_onTestStepFailure>Stop</_onTestStepFailure>
+    </TestScriptObject>
+    <TestScriptObject i:type="TestCase">
+      <_systemId>384bd223-963d-41ea-a092-6e42d1f64cba</_systemId>
+      <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
+      <_userId i:nil="true" />
+      <_title>Random timeout 3</_title>
+      <_description i:nil="true" />
+      <_status>Active</_status>
+      <_functionalArea i:nil="true" />
+      <_reference i:nil="true" />
+      <_author>jmoth</_author>
+      <_created>2018-01-17T15:53:22.0829421-08:00</_created>
+      <_testProperties />
+      <_testScriptObjects>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>b89514f2-a366-405e-bca8-cd85bfc5032a</_systemId>
+          <_parentID>384bd223-963d-41ea-a092-6e42d1f64cba</_parentID>
+          <_userId i:nil="true" />
+          <_title>Untitled test step</_title>
+          <_description></_description>
+          <_status>Active</_status>
+          <_expectedBehaviour></_expectedBehaviour>
+          <_testType>Automated</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly>[TestAssemblies]\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
+            <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
+            <_testMethod>RandomTimeout</_testMethod>
+            <_testParameters>
+              <TestParameter>
+                <DisplayName>minTime</DisplayName>
+                <Name>minTime</Name>
+                <ValueAsString>1000</ValueAsString>
+                <TypeAsString>System.Int32</TypeAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>maxTime</DisplayName>
+                <Name>maxTime</Name>
+                <ValueAsString>10000</ValueAsString>
+                <TypeAsString>System.Int32</TypeAsString>
+              </TestParameter>
+            </_testParameters>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+      </_testScriptObjects>
+      <_tags i:nil="true" />
+      <_knownDefects>false</_knownDefects>
+      <_defects i:nil="true" />
+      <_onTestStepFailure>Stop</_onTestStepFailure>
+    </TestScriptObject>
+  </_testScriptObjects>
+  <_project i:nil="true" />
+  <_testPreprocessor>
+    <_systemId>58057e27-7aa1-4f16-921f-5eba338becf4</_systemId>
+    <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
+    <_userId i:nil="true" />
+    <_title i:nil="true" />
+    <_description i:nil="true" />
+    <_status>Incomplete</_status>
+    <_ignoreResult>false</_ignoreResult>
+    <_testAutomationDefinition>
+      <_testAssembly i:nil="true" />
+      <_testClass i:nil="true" />
+      <_testMethod i:nil="true" />
+      <_testParameters />
+    </_testAutomationDefinition>
+    <_testType>Automated</_testType>
+    <_onFailure>Stop</_onFailure>
+  </_testPreprocessor>
+  <_testPostProcessor>
+    <_systemId>542bb1df-69f3-4940-97ea-e1e52934bc15</_systemId>
+    <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
+    <_userId i:nil="true" />
+    <_title i:nil="true" />
+    <_description i:nil="true" />
+    <_status>Incomplete</_status>
+    <_ignoreResult>false</_ignoreResult>
+    <_testAutomationDefinition>
+      <_testAssembly i:nil="true" />
+      <_testClass i:nil="true" />
+      <_testMethod i:nil="true" />
+      <_testParameters />
+    </_testAutomationDefinition>
+    <_testType>Automated</_testType>
+  </_testPostProcessor>
+  <_filePath>[TestSuites]\ListenerService2.ste</_filePath>
+</TestSuite>
