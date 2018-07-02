@@ -90,7 +90,6 @@ namespace Quintity.TestFramework.TestListenersService
                 if (args.StopAll)
                 {
                     virtualUserEventHandlers.Clear();
-                    fireTestListenersCompleteCallback(args.TerminationReason, args.Explanation);
                 }
                 else
                 {
@@ -106,7 +105,8 @@ namespace Quintity.TestFramework.TestListenersService
                         string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
                         logEvent.Debug($"Total listeners processing elapsed time:  {elapsedTime} ({virtualUser})");
 #endif
-                        fireTestListenersCompleteCallback(args.TerminationReason, args.Explanation);
+                        // Removed handler until next iteration.
+                        VirtualUserEventsHandler.OnVirtualUserTestListenerEventsHandlerComplete -= OnVirtualUserEventsHandlerComplete;
                     }
                 }
             }

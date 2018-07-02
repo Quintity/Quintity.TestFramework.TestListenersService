@@ -5,7 +5,7 @@ using Quintity.TestFramework.Runtime;
 
 namespace Quintity.TestFramework.TestListenersService
 {
-    [ServiceContract(CallbackContract = typeof(IListenerEventsCallbacks), SessionMode = SessionMode.Required)]
+    [ServiceContract(SessionMode = SessionMode.Required)]
     public interface IListenerEvents
     {
         [OperationContract]
