@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://services.report.smartstream.cognosante.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://beans.report.smartstream.cognosante.com" xmlns:impl="http://services.report.smartstream.cognosante.com" targetNamespace="http://services.report.smartstream.cognosante.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://beans.report.smartstream.cognosante.com">
+      <xsd:import namespace="http://services.report.smartstream.cognosante.com" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="RowBean">
+        <xsd:sequence>
+          <xsd:element name="column01" nillable="true" type="xsd:string" />
+          <xsd:element name="column02" nillable="true" type="xsd:string" />
+          <xsd:element name="column03" nillable="true" type="xsd:string" />
+          <xsd:element name="column04" nillable="true" type="xsd:string" />
+          <xsd:element name="column05" nillable="true" type="xsd:string" />
+          <xsd:element name="column06" nillable="true" type="xsd:string" />
+          <xsd:element name="column07" nillable="true" type="xsd:string" />
+          <xsd:element name="column08" nillable="true" type="xsd:string" />
+          <xsd:element name="column09" nillable="true" type="xsd:string" />
+          <xsd:element name="column10" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://services.report.smartstream.cognosante.com">
+      <xsd:import namespace="http://beans.report.smartstream.cognosante.com" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOf_tns1_RowBean">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:RowBean[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getTxDataForXCelsiusResponse">
+    <wsdl:part name="getTxDataForXCelsiusReturn" type="impl:ArrayOf_tns1_RowBean" />
+  </wsdl:message>
+  <wsdl:message name="getSpagoDatasetRequest">
+    <wsdl:part name="userId" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="datasetName" type="xsd:string" />
+    <wsdl:part name="parameters" type="xsd:string" />
+    <wsdl:part name="headers" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="getSpagoDatasetResponse">
+    <wsdl:part name="getSpagoDatasetReturn" type="impl:ArrayOf_tns1_RowBean" />
+  </wsdl:message>
+  <wsdl:message name="getTxDataForXCelsiusRequest">
+    <wsdl:part name="userId" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="queryText" type="xsd:string" />
+    <wsdl:part name="parameters" type="xsd:string" />
+    <wsdl:part name="startRow" type="xsd:int" />
+    <wsdl:part name="numberOfRows" type="xsd:int" />
+    <wsdl:part name="headers" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="QueryService">
+    <wsdl:operation name="getSpagoDataset" parameterOrder="userId password datasetName parameters headers">
+      <wsdl:input name="getSpagoDatasetRequest" message="impl:getSpagoDatasetRequest" />
+      <wsdl:output name="getSpagoDatasetResponse" message="impl:getSpagoDatasetResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getTxDataForXCelsius" parameterOrder="userId password queryText parameters startRow numberOfRows headers">
+      <wsdl:input name="getTxDataForXCelsiusRequest" message="impl:getTxDataForXCelsiusRequest" />
+      <wsdl:output name="getTxDataForXCelsiusResponse" message="impl:getTxDataForXCelsiusResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QueryServiceSoapBinding" type="impl:QueryService">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getSpagoDataset">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getSpagoDatasetRequest">
+        <wsdlsoap:body use="encoded" namespace="http://services.report.smartstream.cognosante.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getSpagoDatasetResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.report.smartstream.cognosante.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTxDataForXCelsius">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getTxDataForXCelsiusRequest">
+        <wsdlsoap:body use="encoded" namespace="http://services.report.smartstream.cognosante.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getTxDataForXCelsiusResponse">
+        <wsdlsoap:body use="encoded" namespace="http://services.report.smartstream.cognosante.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QueryServiceService">
+    <wsdl:port name="QueryService" binding="impl:QueryServiceSoapBinding">
+      <wsdlsoap:address location="http://sgdev53app02.cognosante.hosted:8080/SmartStreamReports/services/QueryService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

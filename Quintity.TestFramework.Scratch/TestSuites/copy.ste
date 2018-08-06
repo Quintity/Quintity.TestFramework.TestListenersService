@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>7e2efc4f-31fd-48bd-8f7f-d6215f288a63</SystemID>
+  <UserID>0</UserID>
+  <Title>Master</Title>
+  <Author>jmoth</Author>
+  <Created>2016-02-14T06:32:26-08:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>4941ad49-ccd9-4091-901f-ba65d890993b</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>1bee9ce6-dc7b-4895-8fd1-d8f2499840c6</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestSuite" />
+  </TestScriptObjects>
+</TestSuite>

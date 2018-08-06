@@ -12,24 +12,28 @@ namespace Quintity.TestFramework.ListenersService.Tests
     public class TestMethods : TestClassBase
     {
         [TestMethod]
-        public TestVerdict SampleTestMethod()
+        public TestVerdict ScratchMethod()
         {
             try
             {
-                using (var testMetric = new TestMetric("9999", "Test metric description"))
-                {
-                    testMetric.Start();
-                    Thread.Sleep(5000);
-                    testMetric.Stop();
-                };
+                //using (var testMetric = new TestMetric("9999", "Test metric description"))
+                //{
+                //    testMetric.Start();
+                //    Thread.Sleep(5000);
+                //    testMetric.Stop();
+                //};
 
-                TestCheck.IsTrue("This is a sample test check", false);
+                var testCheck = TestCheck.IsTrue("This is the first a sample test check", false, "I expected this to fail");
+                testCheck = TestCheck.IsTrue("This is the second a sample test check", true, "I expected this to pass.");
+                testCheck = TestCheck.IsTrue("This is the third a sample test check", false, $"Expected:  Pass, Actual:  Fail.");
+
                 TestWarning.IsTrue(false, "This is a sample test warning.");
+
                 TestTrace.Trace("This is a sample trace message");
 
                 Thread.Sleep(5000);
 
-                TestMessage += "Success";
+                TestMessage += "Completed!";
                 TestVerdict = TestVerdict.Pass;
             }
             catch (Exception e)
@@ -154,22 +158,27 @@ namespace Quintity.TestFramework.ListenersService.Tests
             return TestVerdict;
         }
 
-        private void getRuntimeClient()
-        {
-            NetTcpBinding binding = new NetTcpBinding();
-            //binding.ReceiveTimeout = TimeSpan.FromDays(7);
-            //binding.SendTimeout = TimeSpan.FromDays(7);
-            //binding.MaxReceivedMessageSize = 1048575;
-            //binding.MaxBufferSize = 1048575;
-            //binding.ReaderQuotas.MaxStringContentLength = 1048575;
+        //public TestVerdict TestListenersTest()
+        //{
 
-            //InstanceContext context = new InstanceContext(new OperationsCallbacks());
-            //InstanceContext context = new InstanceContext(new ServiceHostBase("localhost"));
-            //var bob = new TestListenersService.ListenerEventsClient((binding,
-            //    new EndpointAddress("net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/"));
+        //}
 
-            //return new TestListenerService.ListenerEventsClient(binding,
-            //    new EndpointAddress("net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/"));
-        }
+        //private void getRuntimeClient()
+        //{
+        //    NetTcpBinding binding = new NetTcpBinding();
+        //    //binding.ReceiveTimeout = TimeSpan.FromDays(7);
+        //    //binding.SendTimeout = TimeSpan.FromDays(7);
+        //    //binding.MaxReceivedMessageSize = 1048575;
+        //    //binding.MaxBufferSize = 1048575;
+        //    //binding.ReaderQuotas.MaxStringContentLength = 1048575;
+
+        //    //InstanceContext context = new InstanceContext(new OperationsCallbacks());
+        //    //InstanceContext context = new InstanceContext(new ServiceHostBase("localhost"));
+        //    //var bob = new TestListenersService.ListenerEventsClient((binding,
+        //    //    new EndpointAddress("net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/"));
+
+        //    return new TestListenerService.ListenerEventsClient(binding,
+        //        new EndpointAddress("net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/"));
+        //}
     }
 }

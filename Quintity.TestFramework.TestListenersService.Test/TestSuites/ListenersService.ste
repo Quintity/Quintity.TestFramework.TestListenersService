@@ -1,299 +1,114 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TestSuite xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core">
-  <_systemId>d0b79f72-1b62-4027-b49e-ad91eebec338</_systemId>
-  <_parentID>00000000-0000-0000-0000-000000000000</_parentID>
-  <_userId i:nil="true" />
-  <_title>ListenersService</_title>
-  <_description i:nil="true" />
-  <_status>Active</_status>
-  <_functionalArea i:nil="true" />
-  <_reference i:nil="true" />
-  <_author>jmoth</_author>
-  <_created>2017-12-22T09:13:37.1688866-08:00</_created>
-  <_testProperties />
-  <_testScriptObjects>
-    <TestScriptObject i:type="TestCase">
-      <_systemId>ac603244-bdc0-4637-a9bc-293b433c149f</_systemId>
-      <_parentID>d0b79f72-1b62-4027-b49e-ad91eebec338</_parentID>
-      <_userId i:nil="true" />
-      <_title>Random timeout1</_title>
-      <_description i:nil="true" />
-      <_status>Active</_status>
-      <_functionalArea i:nil="true" />
-      <_reference i:nil="true" />
-      <_author>jmoth</_author>
-      <_created>2017-12-22T09:13:37.1698861-08:00</_created>
-      <_testProperties />
-      <_testScriptObjects>
-        <TestScriptObject i:type="TestStep">
-          <_systemId>9095928a-96bc-411a-90a3-8c88842014d6</_systemId>
-          <_parentID>ac603244-bdc0-4637-a9bc-293b433c149f</_parentID>
-          <_userId i:nil="true" />
-          <_title>Untitled test step</_title>
-          <_description></_description>
-          <_status>Active</_status>
-          <_expectedBehaviour></_expectedBehaviour>
-          <_testType>Automated</_testType>
-          <_iterations>1</_iterations>
-          <_alwaysExecute>false</_alwaysExecute>
-          <_expectedTestVerdict>Pass</_expectedTestVerdict>
-          <_testAutomationDefinition>
-            <_testAssembly>[TestAssemblies]\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
-            <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
-            <_testMethod>RandomTimeout</_testMethod>
-            <_testParameters>
-              <TestParameter>
-                <DisplayName>minTime</DisplayName>
-                <Name>minTime</Name>
-                <ValueAsString>100</ValueAsString>
-                <TypeAsString>System.Int32</TypeAsString>
-              </TestParameter>
-              <TestParameter>
-                <DisplayName>maxTime</DisplayName>
-                <Name>maxTime</Name>
-                <ValueAsString>10000</ValueAsString>
-                <TypeAsString>System.Int32</TypeAsString>
-              </TestParameter>
-            </_testParameters>
-          </_testAutomationDefinition>
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>9234c804-4fe3-4fc3-845b-cae7509cc8a0</SystemID>
+  <UserID>1</UserID>
+  <Title>ListenersService</Title>
+  <Author>jmoth</Author>
+  <Created>2018-08-05T13:52:15-07:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>860033d5-b786-46ac-8987-22086c332aa9</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>af7ade5b-9838-4be4-b2e3-d0354031603b</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>0dc0cce1-445d-46e9-a7ed-e8071b44b1df</SystemID>
+      <UserID>1</UserID>
+      <Title>Untitled test case</Title>
+      <Author>jmoth</Author>
+      <Created>2018-08-05T13:52:15-07:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>264f8e48-a050-4614-b98e-4eff7dc46bfb</SystemID>
+          <UserID />
+          <Title>Untitled test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.TestListenersService.Tests.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</TestClass>
+            <TestMethod>ScratchMethod</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
         </TestScriptObject>
-      </_testScriptObjects>
-      <_tags i:nil="true" />
-      <_knownDefects>false</_knownDefects>
-      <_defects i:nil="true" />
-      <_onTestStepFailure>Stop</_onTestStepFailure>
+      </TestScriptObjects>
     </TestScriptObject>
-    <TestScriptObject i:type="TestSuite">
-      <_systemId>aae0d092-a90f-4344-b1ed-37d241e7a02f</_systemId>
-      <_parentID>d0b79f72-1b62-4027-b49e-ad91eebec338</_parentID>
-      <_userId i:nil="true" />
-      <_title>ListenerService2</_title>
-      <_description i:nil="true" />
-      <_status>Active</_status>
-      <_functionalArea i:nil="true" />
-      <_reference i:nil="true" />
-      <_author>jmoth</_author>
-      <_created>2018-01-17T15:53:22.0829421-08:00</_created>
-      <_testProperties />
-      <_testScriptObjects>
-        <TestScriptObject i:type="TestCase">
-          <_systemId>4b03524b-06b0-41fc-aeb7-81442fc80d75</_systemId>
-          <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
-          <_userId i:nil="true" />
-          <_title>Random timeout 2</_title>
-          <_description i:nil="true" />
-          <_status>Active</_status>
-          <_functionalArea i:nil="true" />
-          <_reference i:nil="true" />
-          <_author>jmoth</_author>
-          <_created>2018-01-17T15:53:22.0829421-08:00</_created>
-          <_testProperties />
-          <_testScriptObjects>
-            <TestScriptObject i:type="TestStep">
-              <_systemId>4e745f68-10dc-4fc0-b8e6-18f657f35828</_systemId>
-              <_parentID>4b03524b-06b0-41fc-aeb7-81442fc80d75</_parentID>
-              <_userId i:nil="true" />
-              <_title>Untitled test step</_title>
-              <_description></_description>
-              <_status>Active</_status>
-              <_expectedBehaviour></_expectedBehaviour>
-              <_testType>Automated</_testType>
-              <_iterations>1</_iterations>
-              <_alwaysExecute>false</_alwaysExecute>
-              <_expectedTestVerdict>Pass</_expectedTestVerdict>
-              <_testAutomationDefinition>
-                <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.ListenersService.Test\bin\Debug\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
-                <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
-                <_testMethod>RandomTimeout</_testMethod>
-                <_testParameters>
-                  <TestParameter>
-                    <DisplayName>minTime</DisplayName>
-                    <Name>minTime</Name>
-                    <ValueAsString>1000</ValueAsString>
-                    <TypeAsString>System.Int32</TypeAsString>
-                  </TestParameter>
-                  <TestParameter>
-                    <DisplayName>maxTime</DisplayName>
-                    <Name>maxTime</Name>
-                    <ValueAsString>10000</ValueAsString>
-                    <TypeAsString>System.Int32</TypeAsString>
-                  </TestParameter>
-                </_testParameters>
-              </_testAutomationDefinition>
-            </TestScriptObject>
-          </_testScriptObjects>
-          <_tags i:nil="true" />
-          <_knownDefects>false</_knownDefects>
-          <_defects i:nil="true" />
-          <_onTestStepFailure>Stop</_onTestStepFailure>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>c745958c-8e75-4c3d-8ff5-32cd6cd8e8a6</SystemID>
+      <UserID>2</UserID>
+      <Title>Untitled test case</Title>
+      <Author>jmoth</Author>
+      <Created>2018-08-05T13:54:43-07:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>85c1db9d-e80e-4e52-9e42-a8c1622c56ac</SystemID>
+          <UserID />
+          <Title>Untitled test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.TestListenersService.Tests.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</TestClass>
+            <TestMethod>ScratchMethod</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
         </TestScriptObject>
-        <TestScriptObject i:type="TestCase">
-          <_systemId>384bd223-963d-41ea-a092-6e42d1f64cba</_systemId>
-          <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
-          <_userId i:nil="true" />
-          <_title>Random timeout 3</_title>
-          <_description i:nil="true" />
-          <_status>Active</_status>
-          <_functionalArea i:nil="true" />
-          <_reference i:nil="true" />
-          <_author>jmoth</_author>
-          <_created>2018-01-17T15:53:22.0829421-08:00</_created>
-          <_testProperties />
-          <_testScriptObjects>
-            <TestScriptObject i:type="TestStep">
-              <_systemId>b89514f2-a366-405e-bca8-cd85bfc5032a</_systemId>
-              <_parentID>384bd223-963d-41ea-a092-6e42d1f64cba</_parentID>
-              <_userId i:nil="true" />
-              <_title>Untitled test step</_title>
-              <_description></_description>
-              <_status>Active</_status>
-              <_expectedBehaviour></_expectedBehaviour>
-              <_testType>Automated</_testType>
-              <_iterations>1</_iterations>
-              <_alwaysExecute>false</_alwaysExecute>
-              <_expectedTestVerdict>Pass</_expectedTestVerdict>
-              <_testAutomationDefinition>
-                <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.ListenersService.Test\bin\Debug\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
-                <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
-                <_testMethod>RandomTimeout</_testMethod>
-                <_testParameters>
-                  <TestParameter>
-                    <DisplayName>minTime</DisplayName>
-                    <Name>minTime</Name>
-                    <ValueAsString>1000</ValueAsString>
-                    <TypeAsString>System.Int32</TypeAsString>
-                  </TestParameter>
-                  <TestParameter>
-                    <DisplayName>maxTime</DisplayName>
-                    <Name>maxTime</Name>
-                    <ValueAsString>10000</ValueAsString>
-                    <TypeAsString>System.Int32</TypeAsString>
-                  </TestParameter>
-                </_testParameters>
-              </_testAutomationDefinition>
-            </TestScriptObject>
-          </_testScriptObjects>
-          <_tags i:nil="true" />
-          <_knownDefects>false</_knownDefects>
-          <_defects i:nil="true" />
-          <_onTestStepFailure>Stop</_onTestStepFailure>
-        </TestScriptObject>
-      </_testScriptObjects>
-      <_project i:nil="true" />
-      <_testPreprocessor>
-        <_systemId>58057e27-7aa1-4f16-921f-5eba338becf4</_systemId>
-        <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
-        <_userId i:nil="true" />
-        <_title i:nil="true" />
-        <_description i:nil="true" />
-        <_status>Incomplete</_status>
-        <_ignoreResult>false</_ignoreResult>
-        <_testAutomationDefinition>
-          <_testAssembly i:nil="true" />
-          <_testClass i:nil="true" />
-          <_testMethod i:nil="true" />
-          <_testParameters />
-        </_testAutomationDefinition>
-        <_testType>Automated</_testType>
-        <_onFailure>Stop</_onFailure>
-      </_testPreprocessor>
-      <_testPostProcessor>
-        <_systemId>542bb1df-69f3-4940-97ea-e1e52934bc15</_systemId>
-        <_parentID>aae0d092-a90f-4344-b1ed-37d241e7a02f</_parentID>
-        <_userId i:nil="true" />
-        <_title i:nil="true" />
-        <_description i:nil="true" />
-        <_status>Incomplete</_status>
-        <_ignoreResult>false</_ignoreResult>
-        <_testAutomationDefinition>
-          <_testAssembly i:nil="true" />
-          <_testClass i:nil="true" />
-          <_testMethod i:nil="true" />
-          <_testParameters />
-        </_testAutomationDefinition>
-        <_testType>Automated</_testType>
-      </_testPostProcessor>
-      <_filePath>[TestSuites]\ListenerService2.ste</_filePath>
+      </TestScriptObjects>
     </TestScriptObject>
-    <TestScriptObject i:type="TestCase">
-      <_systemId>f61f8811-1adb-43e1-887a-c4deef1d83f3</_systemId>
-      <_parentID>d0b79f72-1b62-4027-b49e-ad91eebec338</_parentID>
-      <_userId i:nil="true" />
-      <_title>Sample test method</_title>
-      <_description i:nil="true" />
-      <_status>Active</_status>
-      <_functionalArea i:nil="true" />
-      <_reference i:nil="true" />
-      <_author>jmoth</_author>
-      <_created>2017-12-22T09:13:37.1698861-08:00</_created>
-      <_testProperties>
-        <TestProperty>
-          <Name>SSSSS</Name>
-          <Description>DDD</Description>
-          <Value i:nil="true" />
-          <Active>true</Active>
-        </TestProperty>
-      </_testProperties>
-      <_testScriptObjects>
-        <TestScriptObject i:type="TestStep">
-          <_systemId>6cfd02c6-9035-4eaf-9c9f-eb853186ba98</_systemId>
-          <_parentID>f61f8811-1adb-43e1-887a-c4deef1d83f3</_parentID>
-          <_userId i:nil="true" />
-          <_title>Untitled test step</_title>
-          <_description></_description>
-          <_status>Active</_status>
-          <_expectedBehaviour></_expectedBehaviour>
-          <_testType>Automated</_testType>
-          <_iterations>1</_iterations>
-          <_alwaysExecute>false</_alwaysExecute>
-          <_expectedTestVerdict>Pass</_expectedTestVerdict>
-          <_testAutomationDefinition>
-            <_testAssembly>[TestAssemblies]\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
-            <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
-            <_testMethod>SampleTestMethod</_testMethod>
-            <_testParameters />
-          </_testAutomationDefinition>
-        </TestScriptObject>
-      </_testScriptObjects>
-      <_tags i:nil="true" />
-      <_knownDefects>false</_knownDefects>
-      <_defects i:nil="true" />
-      <_onTestStepFailure>Stop</_onTestStepFailure>
-    </TestScriptObject>
-  </_testScriptObjects>
-  <_project i:nil="true" />
-  <_testPreprocessor>
-    <_systemId>0d28e4b4-ac89-4a51-a9ea-6bc12db88094</_systemId>
-    <_parentID>d0b79f72-1b62-4027-b49e-ad91eebec338</_parentID>
-    <_userId i:nil="true" />
-    <_title i:nil="true" />
-    <_description></_description>
-    <_status>Active</_status>
-    <_ignoreResult>false</_ignoreResult>
-    <_testAutomationDefinition>
-      <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.ListenersService.Test\bin\Debug\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
-      <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
-      <_testMethod>DumpProperties</_testMethod>
-      <_testParameters />
-    </_testAutomationDefinition>
-    <_testType>Automated</_testType>
-    <_onFailure>Stop</_onFailure>
-  </_testPreprocessor>
-  <_testPostProcessor>
-    <_systemId>cc04ad36-80cf-4094-b2ed-40e4c8b95ba8</_systemId>
-    <_parentID>d0b79f72-1b62-4027-b49e-ad91eebec338</_parentID>
-    <_userId i:nil="true" />
-    <_title i:nil="true" />
-    <_description></_description>
-    <_status>Active</_status>
-    <_ignoreResult>false</_ignoreResult>
-    <_testAutomationDefinition>
-      <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.ListenersService.Test\bin\Debug\Quintity.TestFramework.ListenersService.Tests.dll</_testAssembly>
-      <_testClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</_testClass>
-      <_testMethod>DumpProperties</_testMethod>
-      <_testParameters />
-    </_testAutomationDefinition>
-    <_testType>Automated</_testType>
-  </_testPostProcessor>
-  <_filePath>[TestSuites]\ListenersService.ste</_filePath>
+  </TestScriptObjects>
+  <FilePath>[TestSuites]\ListenersService.ste</FilePath>
 </TestSuite>

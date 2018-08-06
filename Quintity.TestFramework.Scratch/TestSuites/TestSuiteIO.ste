@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestSuite xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core">
+  <_systemId>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</_systemId>
+  <_parentId>00000000-0000-0000-0000-000000000000</_parentId>
+  <_userId>999</_userId>
+  <_title>TestSuiteIO</_title>
+  <_description>This is the description</_description>
+  <_status>Active</_status>
+  <_functionalArea>SuiteRight</_functionalArea>
+  <_reference>The moon</_reference>
+  <_author>jmoth</_author>
+  <_created>2018-01-24T17:46:56.0115405-08:00</_created>
+  <_testProperties />
+  <_testScriptObjects>
+    <TestScriptObject i:type="TestCase">
+      <_systemId>65336300-c38e-468b-b587-20dbd7b96dbe</_systemId>
+      <_parentId>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</_parentId>
+      <_userId>9999.9</_userId>
+      <_title>First test case</_title>
+      <_description>this is the test case description</_description>
+      <_status>Active</_status>
+      <_functionalArea>Case write</_functionalArea>
+      <_reference>yo momma</_reference>
+      <_author>jmoth</_author>
+      <_created>2018-01-24T17:46:56.0120423-08:00</_created>
+      <_testProperties>
+        <TestProperty>
+          <Name>Fubar</Name>
+          <Description>This is the description</Description>
+          <Value />
+          <Active>true</Active>
+        </TestProperty>
+      </_testProperties>
+      <_testScriptObjects>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>e9091bbc-4181-480a-af68-f5c9f5db46b4</_systemId>
+          <_parentId>65336300-c38e-468b-b587-20dbd7b96dbe</_parentId>
+          <_userId>666</_userId>
+          <_title>Really import test step</_title>
+          <_description>This is the really import test description	</_description>
+          <_status>Active</_status>
+          <_expectedBehaviour>Nothin' bug good stuff.</_expectedBehaviour>
+          <_testType>Automated</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</_testAssembly>
+            <_testClass>Quintity.TestFramework.Scratch.TestSuiteIO</_testClass>
+            <_testMethod>WriteTestSuite</_testMethod>
+            <_testParameters>
+              <TestParameter>
+                <DisplayName>testSuiteFile</DisplayName>
+                <Name>testSuiteFile</Name>
+                <ValueAsString>c:\temp.ste</ValueAsString>
+                <TypeAsString>System.String</TypeAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>dummy1</DisplayName>
+                <Name>dummy1</Name>
+                <ValueAsString>9999</ValueAsString>
+                <TypeAsString>System.Int32</TypeAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>dummy2</DisplayName>
+                <Name>dummy2</Name>
+                <ValueAsString>true</ValueAsString>
+                <TypeAsString>System.Boolean</TypeAsString>
+              </TestParameter>
+            </_testParameters>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+      </_testScriptObjects>
+      <_tags>BVT</_tags>
+      <_knownDefects>false</_knownDefects>
+      <_defects>100</_defects>
+      <_onTestStepFailure>Stop</_onTestStepFailure>
+    </TestScriptObject>
+    <TestScriptObject i:type="TestSuite">
+      <_systemId>40801efc-a6b4-46ad-bf7d-b61451645172</_systemId>
+      <_parentId>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</_parentId>
+      <_userId i:nil="true" />
+      <_title>TestSuiteIO2</_title>
+      <_description i:nil="true" />
+      <_status>Active</_status>
+      <_functionalArea i:nil="true" />
+      <_reference i:nil="true" />
+      <_author>jmoth</_author>
+      <_created>2018-01-25T06:58:29.9923066-08:00</_created>
+      <_testProperties />
+      <_testScriptObjects>
+        <TestScriptObject i:type="TestCase">
+          <_systemId>5f2ae48a-a0ef-4ddd-b398-e17fb1098592</_systemId>
+          <_parentId>40801efc-a6b4-46ad-bf7d-b61451645172</_parentId>
+          <_userId i:nil="true" />
+          <_title>New test case</_title>
+          <_description i:nil="true" />
+          <_status>Active</_status>
+          <_functionalArea i:nil="true" />
+          <_reference i:nil="true" />
+          <_author>jmoth</_author>
+          <_created>2018-01-25T06:58:29.9933093-08:00</_created>
+          <_testProperties />
+          <_testScriptObjects>
+            <TestScriptObject i:type="TestStep">
+              <_systemId>b2ac2b7e-c429-43f9-b2a3-5a95ba746802</_systemId>
+              <_parentId>5f2ae48a-a0ef-4ddd-b398-e17fb1098592</_parentId>
+              <_userId i:nil="true" />
+              <_title>New test step</_title>
+              <_description>Lycoperdon perlatum, the common puffball, is a widespread species of fungus in the family Agaricaceae. It forms an off-white medium-sized puffball tapering to a wide stalk, 1.5 to 6 cm (0.6 to 2.4 in) wide by 3 to 10 cm (1.2 to 3.9 in) tall. Its top is covered in short spiny bumps that are easily rubbed off to leave a net-like pattern on the surface. When mature it becomes brown, and a hole in the top opens to release spores in a burst when the body is compressed by touch or falling raindrops. It is edible when the young internal flesh is completely white, but can be mistaken for an immature fruit body of several poisonous Amanita species. L. perlatum can usually be distinguished from similar puffballs by differences in surface texture. Its chemical compounds include the unusual amino acid lycoperdic acid and volatile sterol derivatives that give the puffball its flavor and odor. Laboratory tests indicate that extracts of the puffball have antimicrobial and antifungal activities.</_description>
+              <_status>Active</_status>
+              <_expectedBehaviour>What he said.</_expectedBehaviour>
+              <_testType>Automated</_testType>
+              <_iterations>1</_iterations>
+              <_alwaysExecute>false</_alwaysExecute>
+              <_expectedTestVerdict>Pass</_expectedTestVerdict>
+              <_testAutomationDefinition>
+                <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.Scratch\bin\debug\Quintity.TestFramework.Scratch.dll</_testAssembly>
+                <_testClass>Quintity.TestFramework.Scratch.TestSuites.Selenium</_testClass>
+                <_testMethod>Sleep</_testMethod>
+                <_testParameters>
+                  <TestParameter>
+                    <DisplayName>millisecondTimeout</DisplayName>
+                    <Name>millisecondTimeout</Name>
+                    <ValueAsString>1000</ValueAsString>
+                    <TypeAsString>System.Int32</TypeAsString>
+                  </TestParameter>
+                </_testParameters>
+              </_testAutomationDefinition>
+            </TestScriptObject>
+          </_testScriptObjects>
+          <_tags i:nil="true" />
+          <_knownDefects>false</_knownDefects>
+          <_defects i:nil="true" />
+          <_onTestStepFailure>Stop</_onTestStepFailure>
+        </TestScriptObject>
+        <TestScriptObject i:type="TestCase">
+          <_systemId>9089127e-86fa-4068-b05f-4a080d80ae7b</_systemId>
+          <_parentId>40801efc-a6b4-46ad-bf7d-b61451645172</_parentId>
+          <_userId i:nil="true" />
+          <_title>Copy of New test case</_title>
+          <_description i:nil="true" />
+          <_status>Active</_status>
+          <_functionalArea i:nil="true" />
+          <_reference i:nil="true" />
+          <_author>jmoth</_author>
+          <_created>2018-01-25T06:58:29.9933093-08:00</_created>
+          <_testProperties />
+          <_testScriptObjects>
+            <TestScriptObject i:type="TestStep">
+              <_systemId>bd3fad2a-224b-4a65-b572-d1a49215abf0</_systemId>
+              <_parentId>9089127e-86fa-4068-b05f-4a080d80ae7b</_parentId>
+              <_userId i:nil="true" />
+              <_title>New test step</_title>
+              <_description>Lycoperdon perlatum, the common puffball, is a widespread species of fungus in the family Agaricaceae. It forms an off-white medium-sized puffball tapering to a wide stalk, 1.5 to 6 cm (0.6 to 2.4 in) wide by 3 to 10 cm (1.2 to 3.9 in) tall. Its top is covered in short spiny bumps that are easily rubbed off to leave a net-like pattern on the surface. When mature it becomes brown, and a hole in the top opens to release spores in a burst when the body is compressed by touch or falling raindrops. It is edible when the young internal flesh is completely white, but can be mistaken for an immature fruit body of several poisonous Amanita species. L. perlatum can usually be distinguished from similar puffballs by differences in surface texture. Its chemical compounds include the unusual amino acid lycoperdic acid and volatile sterol derivatives that give the puffball its flavor and odor. Laboratory tests indicate that extracts of the puffball have antimicrobial and antifungal activities.</_description>
+              <_status>Active</_status>
+              <_expectedBehaviour>What he said.</_expectedBehaviour>
+              <_testType>Automated</_testType>
+              <_iterations>1</_iterations>
+              <_alwaysExecute>false</_alwaysExecute>
+              <_expectedTestVerdict>Pass</_expectedTestVerdict>
+              <_testAutomationDefinition>
+                <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.Scratch\bin\debug\Quintity.TestFramework.Scratch.dll</_testAssembly>
+                <_testClass>Quintity.TestFramework.Scratch.TestSuites.Selenium</_testClass>
+                <_testMethod>Sleep</_testMethod>
+                <_testParameters>
+                  <TestParameter>
+                    <DisplayName>millisecondTimeout</DisplayName>
+                    <Name>millisecondTimeout</Name>
+                    <ValueAsString>1000</ValueAsString>
+                    <TypeAsString>System.Int32</TypeAsString>
+                  </TestParameter>
+                </_testParameters>
+              </_testAutomationDefinition>
+            </TestScriptObject>
+          </_testScriptObjects>
+          <_tags i:nil="true" />
+          <_knownDefects>false</_knownDefects>
+          <_defects i:nil="true" />
+          <_onTestStepFailure>Stop</_onTestStepFailure>
+        </TestScriptObject>
+      </_testScriptObjects>
+      <_project i:nil="true" />
+      <_testPreprocessor>
+        <_systemId>a7d19b99-0593-4119-bc90-943f82443a4a</_systemId>
+        <_parentId>40801efc-a6b4-46ad-bf7d-b61451645172</_parentId>
+        <_userId i:nil="true" />
+        <_title i:nil="true" />
+        <_description i:nil="true" />
+        <_status>Incomplete</_status>
+        <_ignoreResult>false</_ignoreResult>
+        <_testAutomationDefinition>
+          <_testAssembly i:nil="true" />
+          <_testClass i:nil="true" />
+          <_testMethod i:nil="true" />
+          <_testParameters />
+        </_testAutomationDefinition>
+        <_testType>Automated</_testType>
+        <_onFailure>Stop</_onFailure>
+      </_testPreprocessor>
+      <_testPostProcessor>
+        <_systemId>6b644a5f-251c-4a46-a8bd-63abb4e55905</_systemId>
+        <_parentId>40801efc-a6b4-46ad-bf7d-b61451645172</_parentId>
+        <_userId i:nil="true" />
+        <_title i:nil="true" />
+        <_description i:nil="true" />
+        <_status>Incomplete</_status>
+        <_ignoreResult>false</_ignoreResult>
+        <_testAutomationDefinition>
+          <_testAssembly i:nil="true" />
+          <_testClass i:nil="true" />
+          <_testMethod i:nil="true" />
+          <_testParameters />
+        </_testAutomationDefinition>
+        <_testType>Automated</_testType>
+      </_testPostProcessor>
+      <_filePath>[TestSuites]\TestSuiteIO2.ste</_filePath>
+    </TestScriptObject>
+  </_testScriptObjects>
+  <_project>TestProject</_project>
+  <_testPreprocessor>
+    <_systemId>c85ff3e5-fd7b-43f6-9b44-012b13d592b3</_systemId>
+    <_parentId>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</_parentId>
+    <_userId i:nil="true" />
+    <_title i:nil="true" />
+    <_description>Does preprocessor stuff.</_description>
+    <_status>Active</_status>
+    <_ignoreResult>false</_ignoreResult>
+    <_testAutomationDefinition>
+      <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.Scratch\bin\Debug\Quintity.TestFramework.Scratch.dll</_testAssembly>
+      <_testClass>Quintity.TestFramework.Scratch.TestSuiteIO</_testClass>
+      <_testMethod>Sleep</_testMethod>
+      <_testParameters>
+        <TestParameter>
+          <DisplayName>millisecondTimeout</DisplayName>
+          <Name>millisecondTimeout</Name>
+          <ValueAsString>1</ValueAsString>
+          <TypeAsString>System.Int32</TypeAsString>
+        </TestParameter>
+      </_testParameters>
+    </_testAutomationDefinition>
+    <_testType>Automated</_testType>
+    <_onFailure>Stop</_onFailure>
+  </_testPreprocessor>
+  <_testPostProcessor>
+    <_systemId>82d333c2-b02f-4e9c-b9c2-e823620923ff</_systemId>
+    <_parentId>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</_parentId>
+    <_userId i:nil="true" />
+    <_title i:nil="true" />
+    <_description>Does postprocessor stuff</_description>
+    <_status>Inactive</_status>
+    <_ignoreResult>false</_ignoreResult>
+    <_testAutomationDefinition>
+      <_testAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.Scratch\bin\Debug\Quintity.TestFramework.Scratch.dll</_testAssembly>
+      <_testClass>Quintity.TestFramework.Scratch.TestSuiteIO</_testClass>
+      <_testMethod>Sleep</_testMethod>
+      <_testParameters>
+        <TestParameter>
+          <DisplayName>millisecondTimeout</DisplayName>
+          <Name>millisecondTimeout</Name>
+          <ValueAsString>2</ValueAsString>
+          <TypeAsString>System.Int32</TypeAsString>
+        </TestParameter>
+      </_testParameters>
+    </_testAutomationDefinition>
+    <_testType>Automated</_testType>
+  </_testPostProcessor>
+  <_filePath>[TestSuites]\TestSuiteIO.ste</_filePath>
+</TestSuite>

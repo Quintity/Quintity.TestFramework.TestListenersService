@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</SystemID>
+  <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+  <UserID>999</UserID>
+  <Title>TestSuiteIO</Title>
+  <Author>jmoth</Author>
+  <Created>2018-01-24T17:46:56-08:00</Created>
+  <Project>TestProject</Project>
+  <Reference>The moon</Reference>
+  <FunctionalArea>SuiteRight</FunctionalArea>
+  <Description><![CDATA[This is the description]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>c85ff3e5-fd7b-43f6-9b44-012b13d592b3</SystemID>
+    <ParentID>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</ParentID>
+    <UserID />
+    <Title />
+    <Description>Does preprocessor stuff.</Description>
+    <Status>Active</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.Scratch\bin\Debug\Quintity.TestFramework.Scratch.dll</TestAssembly>
+      <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+      <TestMethod>Sleep</TestMethod>
+      <TestParameters>
+        <TestParameter>
+          <DisplayName>millisecondTimeout</DisplayName>
+          <Name>millisecondTimeout</Name>
+          <TypeAsString>System.Int32</TypeAsString>
+          <ValueAsString>1</ValueAsString>
+        </TestParameter>
+      </TestParameters>
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>82d333c2-b02f-4e9c-b9c2-e823620923ff</SystemID>
+    <ParentID>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</ParentID>
+    <UserID />
+    <Title />
+    <Description>Does postprocessor stuff</Description>
+    <Status>Inactive</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.Scratch\bin\Debug\Quintity.TestFramework.Scratch.dll</TestAssembly>
+      <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+      <TestMethod>Sleep</TestMethod>
+      <TestParameters>
+        <TestParameter>
+          <DisplayName>millisecondTimeout</DisplayName>
+          <Name>millisecondTimeout</Name>
+          <TypeAsString>System.Int32</TypeAsString>
+          <ValueAsString>2</ValueAsString>
+        </TestParameter>
+      </TestParameters>
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>65336300-c38e-468b-b587-20dbd7b96dbe</SystemID>
+      <ParentID>1f4e2267-f5ae-4f01-bbc7-290bd7f020f3</ParentID>
+      <UserID>9999.9</UserID>
+      <Title>First test case</Title>
+      <Author>jmoth</Author>
+      <Created>2018-01-24T17:46:56-08:00</Created>
+      <FunctionalArea>Case write</FunctionalArea>
+      <Tags>BVT</Tags>
+      <Defects>100</Defects>
+      <KnownDefects>False</KnownDefects>
+      <Reference>yo momma</Reference>
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[this is the test case description]]></Description>
+      <TestProperties>
+        <TestProperties>
+          <Name>Fubar</Name>
+          <Description>This is the description</Description>
+          <Value>System.Object</Value>
+          <Active>True</Active>
+        </TestProperties>
+      </TestProperties>
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>e9091bbc-4181-480a-af68-f5c9f5db46b4</SystemID>
+          <ParentID>65336300-c38e-468b-b587-20dbd7b96dbe</ParentID>
+          <UserID>666</UserID>
+          <Title>Really import test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[This is the really import test description	]]></Description>
+          <ExpectedBehaviour><![CDATA[Nothin' bug good stuff.]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+            <TestMethod>WriteTestSuite</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>testSuiteFile</DisplayName>
+                <Name>testSuiteFile</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>c:\temp.ste</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>dummy1</DisplayName>
+                <Name>dummy1</Name>
+                <TypeAsString>System.Int32</TypeAsString>
+                <ValueAsString>9999</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>dummy2</DisplayName>
+                <Name>dummy2</Name>
+                <TypeAsString>System.Boolean</TypeAsString>
+                <ValueAsString>true</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+    <TestScriptObject type="TestSuite">[TestOutput]\TestSuiteIO2.ste</TestScriptObject>
+  </TestScriptObjects>
+  <FilePath>[TestOutput]\TestSuiteIO.ste</FilePath>
+</TestSuite>

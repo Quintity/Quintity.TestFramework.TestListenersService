@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using log4net;
 using Quintity.TestFramework.Core;
 using Quintity.TestFramework.Runtime;
+using System.Text;
 
 namespace Quintity.TestFramework.TestListenersService
 {
@@ -68,6 +69,14 @@ namespace Quintity.TestFramework.TestListenersService
 
             if (qualifiedListeners > 0)
             {
+                string listenerText = $"Active listeners ({qualifiedListeners}):  ";
+
+                foreach (var listener in ActiveListeners)
+                {
+                    listenerText += $"\"{listener.Name}\"  ";
+                }
+
+                logEvent.Info($"{listenerText}");
 #if DEBUG
                 stopWatch = new Stopwatch();
                 stopWatch.Start();
@@ -83,7 +92,7 @@ namespace Quintity.TestFramework.TestListenersService
 
         private void OnVirtualUserEventsHandlerComplete(string virtualUser, VirtualUserEventsHandlerCompleteArgs args)
         {
-            logEvent.Debug($"OnVirtualUserEventsHandlerComplete event received ({virtualUser})");
+            logEvent.Info($"OnVirtualUserEventsHandlerComplete event received ({virtualUser})");
 
             lock (isDoneLock)
             {
@@ -272,13 +281,13 @@ namespace Quintity.TestFramework.TestListenersService
                         virtualUserEventsHandler = new VirtualUserEventsHandler(virtualUser);
                         virtualUserEventHandlers.Add(virtualUser, virtualUserEventsHandler);
 
-                        logEvent.Debug($"VirtualUserEventsHandler created for ({virtualUser}) ({virtualUserEventHandlers.Count})");
+                        logEvent.Info($"VirtualUserEventsHandler created for ({virtualUser}) ({virtualUserEventHandlers.Count})");
                     }
 
                     virtualUserEventsHandler.EnqueueListenerEvent(listenerEvent);
                 }
 
-                logEvent.Debug($"Listener event \"{method}\" ({virtualUser}) enqueued.");
+                logEvent.Info($"Listener event \"{method}\" ({virtualUser}) enqueued.");
             }
         }
 
@@ -286,7 +295,7 @@ namespace Quintity.TestFramework.TestListenersService
         {
             try
             {
-                logEvent.Debug("Post TestListenersCompleteNotification to client.");
+                logEvent.Info("Post TestListenersCompleteNotification to client.");
 
                 IListenerEventsCallbacks clientChannel = operationContext.GetCallbackChannel<IListenerEventsCallbacks>();
 
@@ -301,7 +310,7 @@ namespace Quintity.TestFramework.TestListenersService
 
                     clientChannel.TestListenersCompleteNotification(originalListeners, args);
 
-                    logEvent.Debug("TestListenersCompleteNotification posted to client.");
+                    logEvent.Info("TestListenersCompleteNotification posted to client.");
                 }
             }
             catch (CommunicationObjectAbortedException e)

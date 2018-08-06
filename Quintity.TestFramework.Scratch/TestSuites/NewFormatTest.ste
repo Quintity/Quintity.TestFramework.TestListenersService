@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>9738a027-f38a-442c-a8ff-ddfc7cae4bfc</SystemID>
+  <UserID />
+  <Title>NewFormatTest</Title>
+  <Author>jmoth</Author>
+  <Created>2018-01-27T07:26:51-08:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>baef8b02-d3ff-4e16-a964-78e17c95d0f6</SystemID>
+    <Title>This is the processor title</Title>
+    <Description><![CDATA[This is the processor description]]></Description>
+    <Description>This is the processor description</Description>
+    <Status>Active</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</TestAssembly>
+      <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+      <TestMethod>Sleep</TestMethod>
+      <TestParameters>
+        <TestParameter>
+          <DisplayName>millisecondTimeout</DisplayName>
+          <Name>millisecondTimeout</Name>
+          <TypeAsString>System.Int32</TypeAsString>
+          <ValueAsString>2000</ValueAsString>
+        </TestParameter>
+      </TestParameters>
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>795ae556-408b-44e1-8945-d8df277f773b</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>67756c13-c835-4023-9c75-57942eb4b770</SystemID>
+      <UserID />
+      <Title>Untitled test case</Title>
+      <Author>jmoth</Author>
+      <Created>2018-01-27T07:26:51-08:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>61271e9c-f6b9-40d7-9e37-fa3b55210127</SystemID>
+          <UserID>666</UserID>
+          <Title>The test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>True</AlwaysExecute>
+          <Iterations>5</Iterations>
+          <Description><![CDATA[The step's descripton	]]></Description>
+          <ExpectedBehaviour><![CDATA[Expected behavior]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+            <TestMethod>Sleep</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>millisecondTimeout</DisplayName>
+                <Name>millisecondTimeout</Name>
+                <TypeAsString>System.Int32</TypeAsString>
+                <ValueAsString>5000</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>0a4b25db-da5a-44ed-9625-38a6e8a036d9</SystemID>
+          <UserID />
+          <Title>Untitled test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>True</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+            <TestMethod>DumpProperties</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>a2327202-670a-4284-84fc-2177786b4abd</SystemID>
+      <UserID />
+      <Title>Big dummy test case</Title>
+      <Author>jmoth</Author>
+      <Created>2018-01-28T11:31:55-08:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>105e15b8-87cf-452a-814c-059c105da53f</SystemID>
+          <UserID />
+          <Title>Untitled test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+            <TestMethod>WriteTestSuite</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>testSuiteFile</DisplayName>
+                <Name>testSuiteFile</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>c:\temp\suite.ste</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Big dummy1</DisplayName>
+                <Name>dummy1</Name>
+                <TypeAsString>System.Int32</TypeAsString>
+                <ValueAsString>0</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Big dummy2</DisplayName>
+                <Name>dummy2</Name>
+                <TypeAsString>System.Boolean</TypeAsString>
+                <ValueAsString>False</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+    <TestScriptObject type="TestSuite">[TestSuites]\NewFormatTest2.ste</TestScriptObject>
+  </TestScriptObjects>
+  <FilePath>[TestSuites]\NewFormatTest.ste</FilePath>
+</TestSuite>

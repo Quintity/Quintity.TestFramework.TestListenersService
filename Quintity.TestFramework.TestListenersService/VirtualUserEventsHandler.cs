@@ -78,7 +78,7 @@ namespace Quintity.TestFramework.TestListenersService
                     while (true)
                     {
                         listenerEvent = listenerEventQueue.Dequeue();
-                        logEvent.Debug($"Listener event \"{listenerEvent.Method}\" ({VirtualUser}) dequeued.");
+                        logEvent.Info($"Listener event \"{listenerEvent.Method}\" ({VirtualUser}) dequeued.");
 
                         if (!invokeListeners(listenerEvent))
                         {
@@ -100,7 +100,7 @@ namespace Quintity.TestFramework.TestListenersService
                         {
                             stopQueueMonitor();
 
-                            logEvent.Debug($"Firing VirtualUserTestListenerCompleteEvent {VirtualUser}.");
+                            logEvent.Info($"Firing VirtualUserTestListenerCompleteEvent {VirtualUser}.");
 
                             lock (fireLock)
                             {
@@ -112,7 +112,7 @@ namespace Quintity.TestFramework.TestListenersService
                                 });
                             }
 
-                            logEvent.Debug($"VirtualUserTestListenerCompleteEvent fired {VirtualUser} ({listenerEventQueue.Count}).");
+                            logEvent.Info($"VirtualUserTestListenerCompleteEvent fired {VirtualUser} ({listenerEventQueue.Count}).");
                         }
                     }
                 }
@@ -154,7 +154,7 @@ namespace Quintity.TestFramework.TestListenersService
                 stopWatch.Stop();
                 TimeSpan ts = stopWatch.Elapsed;
                 string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-                ////logEvent.Debug($"Virtual user:  {testListenerEvent.VirtualUser}, listener event \"{testListenerEvent.Method}\" elapsed time:  {elapsedTime}");
+                ////logEvent.Info($"Virtual user:  {testListenerEvent.VirtualUser}, listener event \"{testListenerEvent.Method}\" elapsed time:  {elapsedTime}");
 #endif
             }
             catch (AggregateException e)

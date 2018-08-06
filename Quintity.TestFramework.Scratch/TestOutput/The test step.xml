@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestStepResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core">
+  <_systemId>9bdf0421-c43d-4945-8353-bc2dd51318ce</_systemId>
+  <_referenceID>61271e9c-f6b9-40d7-9e37-fa3b55210127</_referenceID>
+  <_testVerdict>Pass</_testVerdict>
+  <_testMessage></_testMessage>
+  <_virtualUser>VirtualUser</_virtualUser>
+  <_startTime>2018-01-28T19:43:53.1134709Z</_startTime>
+  <_endTime>2018-01-28T19:43:58.1139501Z</_endTime>
+  <_testChecks />
+  <_testWarnings />
+  <_testData />
+</TestStepResult>

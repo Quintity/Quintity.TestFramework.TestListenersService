@@ -1,0 +1,54 @@
+﻿<TestPlanRun Name="Test plan run #2">
+  <TestPlan Id="225"/>
+  <Description nil="true" />
+  <Project Id ="214"/>
+  <EntityState Name="Open"/>
+</TestPlanRun>
+
+  <!--<StartDate>2015-05-25T13:11:03</StartDate>
+    <EndDate nil="true" />
+    <CreateDate>2015-05-25T13:06:08</CreateDate>
+    <ModifyDate>2015-05-25T13:11:03</ModifyDate>
+    <LastCommentDate nil="true" />
+    <Tags></Tags>
+    <NumericPriority>163</NumericPriority>
+    <Effort>0.0000</Effort>
+    <EffortCompleted>0.0000</EffortCompleted>
+    <EffortToDo>0.0000</EffortToDo>
+    <Progress>0.0000</Progress>
+    <TimeSpent>0.0000</TimeSpent>
+    <TimeRemain>0.0000</TimeRemain>
+    <PlannedStartDate nil="true" />
+    <PlannedEndDate nil="true" />
+    <NotRunCount>1</NotRunCount>
+    <PassedCount>1</PassedCount>
+    <FailedCount>1</FailedCount>
+    <OnHoldCount>0</OnHoldCount>
+    <BlockedCount>0</BlockedCount>
+    <Project Id="214" Name="My spanking new project">
+      <Process Id="3" Name="Scrum" />
+    </Project>
+    <EntityType Id="14" Name="TestPlanRun" />
+    <Owner Id="1">
+      <FirstName>Jim</FirstName>
+      <LastName>Mothershead</LastName>
+    </Owner>
+    <LastCommentedUser nil="true" />
+    <LinkedTestPlan nil="true" />
+    <Release nil="true" />
+    <Iteration nil="true" />
+    <TeamIteration nil="true" />
+    <Team nil="true" />
+    <Priority Id="12" Name="-">
+      <Importance>1</Importance>
+    </Priority>
+    <EntityState Id="60" Name="Open">
+      <NumericPriority>60</NumericPriority>
+    </EntityState>
+    <ResponsibleTeam nil="true" />
+    <Build nil="true" />
+    <TestPlan Id="225" Name="Do something important user story Test Plan" />
+    <ParentTestPlanRun nil="true" />
+    <CustomFields />-->
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>b709d029-db3c-47e4-b9b6-33f4535580e2</SystemID>
+  <UserID>0</UserID>
+  <Title>Master</Title>
+  <Author>JMothershead</Author>
+  <Created>2016-02-14T06:32:26-08:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>78ad69b3-4d78-4efc-a8e4-58624f00d9a1</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>bcc21123-77ee-48df-adf7-cde17a639a61</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestSuite">[TestSuites]\Scratch2.ste</TestScriptObject>
+    <TestScriptObject type="TestSuite">[TestSuites]\Scratch3.ste</TestScriptObject>
+  </TestScriptObjects>
+  <FilePath>[TestSuites]\Scratch.ste</FilePath>
+</TestSuite>

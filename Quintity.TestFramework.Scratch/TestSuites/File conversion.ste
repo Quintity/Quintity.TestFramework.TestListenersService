@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>1842fb71-2c29-4df1-933e-7ff5a7238d26</SystemID>
+  <UserID />
+  <Title>File conversion</Title>
+  <Author>jmoth</Author>
+  <Created>2018-01-29T08:28:56-08:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>72a501eb-9ea4-45ad-8dc0-4e209d13fc99</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>a84cfbea-99e0-4c0a-8f5c-7fc909924baf</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>cb1b946a-74ea-499c-90e4-a13ab437337a</SystemID>
+      <UserID />
+      <Title>Untitled test case</Title>
+      <Author>jmoth</Author>
+      <Created>2018-01-29T08:28:56-08:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>5aa06032-3576-4bbd-ae89-7b93dcf67366</SystemID>
+          <UserID />
+          <Title>Untitled test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.Scratch.TestSuiteIO</TestClass>
+            <TestMethod>ConvertFile</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Target test suite</DisplayName>
+                <Name>targetTestSuite</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>C:\DevProjects\Quintity\Quintity.ContinuousDelivery\Quintity.ContinousDelivery\Quintity.CDS.TestManager.Tests\TestSuites\Quintity.CDS.TestManager.Tests.ste</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+  </TestScriptObjects>
+  <FilePath>[TestSuites]\File conversion.ste</FilePath>
+</TestSuite>

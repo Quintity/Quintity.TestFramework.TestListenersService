@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D696730-A2F2-412B-A9D1-5B5F004A57B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quintity.TestFramework.Scratch</RootNamespace>
+    <AssemblyName>Quintity.TestFramework.Scratch</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GenericDictionaryEditor">
+      <HintPath>..\packages\GenDictEdit.1.1.0\lib\net20\GenericDictionaryEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WebDriver, Version=2.48.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.48.2\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.48.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.48.2\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arms.cs" />
+    <Compile Include="InternetExplorerTests.cs" />
+    <Compile Include="Performance.cs" />
+    <Compile Include="RESTTests.cs" />
+    <Compile Include="ScratchBase.cs" />
+    <Compile Include="ScratchListener4.cs" />
+    <Compile Include="ScratchListener3.cs" />
+    <Compile Include="ScratchListener2.cs" />
+    <Compile Include="ScratchListener1.cs" />
+    <Compile Include="ScratchTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleClass.cs" />
+    <Compile Include="Selenium.cs" />
+    <Compile Include="TestSuiteIO.cs" />
+    <Compile Include="TargetProcess.cs" />
+    <Compile Include="TestPropertiesTests.cs" />
+    <Compile Include="TestPropertyTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestOutput\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="TestConfigs\ScratchListener.config" />
+    <None Include="TestConfigs\TestProfile.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestConfigs\QuintityTestListeners.config" />
+    <None Include="TestConfigs\SampleListener.config" />
+    <None Include="TestProperties\Copy of Quintity.TestFramework.Scratch.props" />
+    <None Include="TestProperties\Quintity.TestFramework.Scratch.props" />
+    <None Include="TestProperties\Quintity.TestFramework.Scratch.TestListeners.config" />
+    <None Include="TestSuites\ArmsTests.ste" />
+    <None Include="TestSuites\Bogus.ste" />
+    <None Include="TestSuites\Configuration tests.ste" />
+    <None Include="TestSuites\Delegate tests.ste" />
+    <None Include="TestSuites\DummyTestSuite.ste" />
+    <None Include="TestSuites\FailedAssemblyLoad.ste" />
+    <None Include="TestSuites\Five test cases.ste" />
+    <None Include="TestSuites\ListenerTests.ste" />
+    <None Include="TestSuites\Performance.ste" />
+    <None Include="TestSuites\PrioritiesAndTags.ste" />
+    <None Include="TestSuites\Quintity.TestFramework.Scratch.Tests.ste" />
+    <None Include="TestSuites\Scratch.ste" />
+    <None Include="TestSuites\Scratch2.ste" />
+    <None Include="TestSuites\Scratch3.ste" />
+    <None Include="TestSuites\Selenium.ste" />
+    <None Include="TestSuites\SerializationTests.ste" />
+    <None Include="TestSuites\TargetProcess.ste">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestSuites\Ten test cases.ste" />
+    <None Include="TestSuites\TestListeners.ste" />
+    <None Include="TestSuites\TestProcessors.ste" />
+    <None Include="TestSuites\TestProperties.ste" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestData\TestPlanRun.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Quintity.TestFramework.Core\Quintity.TestFramework.Core.csproj">
+      <Project>{f6c3dc21-8c28-4a3d-9051-ece30747aea8}</Project>
+      <Name>Quintity.TestFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Quintity.TestFramework.Runtime\Quintity.TestFramework.Runtime.csproj">
+      <Project>{2c53ff3e-d97d-4112-b175-e4c2a6e4c7d2}</Project>
+      <Name>Quintity.TestFramework.Runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

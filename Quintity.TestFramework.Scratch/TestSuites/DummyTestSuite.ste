@@ -1,0 +1,164 @@
+<TestSuite xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <_systemId>46437b0f-37a3-44f1-844d-69f0a08bd2ca</_systemId>
+  <_parentID>00000000-0000-0000-0000-000000000000</_parentID>
+  <_userId i:nil="true"/>
+  <_title>DummyTestSuite</_title>
+  <_description i:nil="true"/>
+  <_status>Active</_status>
+  <_functionalArea i:nil="true"/>
+  <_reference i:nil="true"/>
+  <_author>jmothershead</_author>
+  <_created>2015-06-19T16:14:35.7508291-07:00</_created>
+  <_testProperties/>
+  <_testScriptObjects>
+    <TestScriptObject i:type="TestCase">
+      <_systemId>c98045fd-8c4b-4caa-a775-5f67effe67dc</_systemId>
+      <_parentID>46437b0f-37a3-44f1-844d-69f0a08bd2ca</_parentID>
+      <_userId i:nil="true"/>
+      <_title>Test case 1</_title>
+      <_description i:nil="true"/>
+      <_status>Active</_status>
+      <_functionalArea i:nil="true"/>
+      <_reference i:nil="true"/>
+      <_author>jmothershead</_author>
+      <_created>2015-06-19T16:14:35.7908291-07:00</_created>
+      <_testProperties/>
+      <_testScriptObjects>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>007fff3f-fe18-4dd7-8363-2ae4ba413141</_systemId>
+          <_parentID>c98045fd-8c4b-4caa-a775-5f67effe67dc</_parentID>
+          <_userId i:nil="true"/>
+          <_title>Test Step 1</_title>
+          <_description/>
+          <_status>Inactive</_status>
+          <_expectedBehaviour/>
+          <_testType>Automated</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly>C:\TestProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.DemoTests\bin\Debug\Quintity.TestFramework.DemoTests.dll</_testAssembly>
+            <_testClass>Quintity.TestFramework.DemoTests.DataDriven</_testClass>
+            <_testMethod>DumpProperties</_testMethod>
+            <_testParameters/>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>be416a4d-56f5-46ca-9cc1-c3c100bf3f15</_systemId>
+          <_parentID>c98045fd-8c4b-4caa-a775-5f67effe67dc</_parentID>
+          <_userId i:nil="true"/>
+          <_title>Copy of Test Step 1</_title>
+          <_description/>
+          <_status>Active</_status>
+          <_expectedBehaviour/>
+          <_testType>Automated</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly>[TestAssemblies]\Quintity.TestFramework.Scratch.dll</_testAssembly>
+            <_testClass>Quintity.TestFramework.Scratch.ScratchTests</_testClass>
+            <_testMethod>TestVerdictOverride</_testMethod>
+            <_testParameters/>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>c5f15d34-e3b4-44ac-af06-e746be2bab20</_systemId>
+          <_parentID>c98045fd-8c4b-4caa-a775-5f67effe67dc</_parentID>
+          <_userId i:nil="true"/>
+          <_title>Test Step 2</_title>
+          <_description i:nil="true"/>
+          <_status>Incomplete</_status>
+          <_expectedBehaviour i:nil="true"/>
+          <_testType>Manual</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly i:nil="true"/>
+            <_testClass i:nil="true"/>
+            <_testMethod i:nil="true"/>
+            <_testParameters/>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>ef387afe-75f3-4d07-a3ab-562463bf6763</_systemId>
+          <_parentID>c98045fd-8c4b-4caa-a775-5f67effe67dc</_parentID>
+          <_userId i:nil="true"/>
+          <_title>Test Step 3</_title>
+          <_description i:nil="true"/>
+          <_status>Incomplete</_status>
+          <_expectedBehaviour i:nil="true"/>
+          <_testType>Manual</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly i:nil="true"/>
+            <_testClass i:nil="true"/>
+            <_testMethod i:nil="true"/>
+            <_testParameters/>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject i:type="TestStep">
+          <_systemId>35411993-ea21-4da5-8fab-7bbb7bbf06db</_systemId>
+          <_parentID>c98045fd-8c4b-4caa-a775-5f67effe67dc</_parentID>
+          <_userId i:nil="true"/>
+          <_title>TestStep 4</_title>
+          <_description i:nil="true"/>
+          <_status>Incomplete</_status>
+          <_expectedBehaviour i:nil="true"/>
+          <_testType>Manual</_testType>
+          <_iterations>1</_iterations>
+          <_alwaysExecute>false</_alwaysExecute>
+          <_expectedTestVerdict>Pass</_expectedTestVerdict>
+          <_testAutomationDefinition>
+            <_testAssembly i:nil="true"/>
+            <_testClass i:nil="true"/>
+            <_testMethod i:nil="true"/>
+            <_testParameters/>
+          </_testAutomationDefinition>
+        </TestScriptObject>
+      </_testScriptObjects>
+      <_tags i:nil="true"/>
+      <_knownDefects>false</_knownDefects>
+      <_defects i:nil="true"/>
+      <_onTestStepFailure>Stop</_onTestStepFailure>
+    </TestScriptObject>
+  </_testScriptObjects>
+  <_project i:nil="true"/>
+  <_testPreprocessor>
+    <_systemId>06de6482-fac9-409e-9236-a335be0a203b</_systemId>
+    <_parentID>46437b0f-37a3-44f1-844d-69f0a08bd2ca</_parentID>
+    <_userId i:nil="true"/>
+    <_title i:nil="true"/>
+    <_description i:nil="true"/>
+    <_status>Incomplete</_status>
+    <_ignoreResult>false</_ignoreResult>
+    <_testAutomationDefinition>
+      <_testAssembly i:nil="true"/>
+      <_testClass i:nil="true"/>
+      <_testMethod i:nil="true"/>
+      <_testParameters/>
+    </_testAutomationDefinition>
+    <_testType>Automated</_testType>
+    <_onFailure>Stop</_onFailure>
+  </_testPreprocessor>
+  <_testPostProcessor>
+    <_systemId>37ddcdff-9eb6-469d-b2ca-653260c6cd2d</_systemId>
+    <_parentID>46437b0f-37a3-44f1-844d-69f0a08bd2ca</_parentID>
+    <_userId i:nil="true"/>
+    <_title i:nil="true"/>
+    <_description i:nil="true"/>
+    <_status>Incomplete</_status>
+    <_ignoreResult>false</_ignoreResult>
+    <_testAutomationDefinition>
+      <_testAssembly i:nil="true"/>
+      <_testClass i:nil="true"/>
+      <_testMethod i:nil="true"/>
+      <_testParameters/>
+    </_testAutomationDefinition>
+    <_testType>Automated</_testType>
+  </_testPostProcessor>
+  <_filePath>[TestHome]\TestSuites\DummyTestSuite.ste</_filePath>
+</TestSuite>

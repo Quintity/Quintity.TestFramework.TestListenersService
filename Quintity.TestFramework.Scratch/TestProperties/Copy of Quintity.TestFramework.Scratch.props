@@ -1,0 +1,46 @@
+<TestProperties xmlns="http://schemas.datacontract.org/2004/07/Quintity.TestFramework.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <TestProperty>
+    <Key>TESTHOME</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">C:\TestProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.Scratch</Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>TESTCONFIGS</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[TESTHOME]\TestConfigs</Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>TESTSUITES</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[TESTHOME]\TestSuites</Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>TESTASSEMBLIES</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[TESTHOME]\bin\debug</Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>TESTDATA</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[TESTHOME]\TestData</Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>TESTOUTPUT</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">[TESTHOME]\TestOutput</Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>NULL</Key>
+    <Value i:nil="true"/>
+  </TestProperty>
+  <TestProperty>
+    <Key>EMPTYSTRING</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/>
+  </TestProperty>
+  <TestProperty>
+    <Key>SPACE</Key>
+    <Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"> </Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>NOW</Key>
+    <Value i:type="a:dateTime" xmlns:a="http://www.w3.org/2001/XMLSchema">2014-03-03T07:14:12.3689471-08:00</Value>
+  </TestProperty>
+  <TestProperty>
+    <Key>TODAY</Key>
+    <Value i:type="a:dateTime" xmlns:a="http://www.w3.org/2001/XMLSchema">2014-03-03T00:00:00-08:00</Value>
+  </TestProperty>
+</TestProperties>

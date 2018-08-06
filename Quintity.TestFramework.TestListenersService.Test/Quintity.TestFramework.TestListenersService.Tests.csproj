@@ -63,16 +63,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Quintity.TestFramework.TestListener.Performance\Quintity.TestFramework.TestListener.Performance.csproj">
-      <Project>{9e1dd75a-620e-4849-90dd-0fbc4ea4b23f}</Project>
-      <Name>Quintity.TestFramework.TestListener.Performance</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Quintity.TestFramework.TestListener.TextFile\Quintity.TestFramework.TestListener.TextFile.csproj">
-      <Project>{07f4a892-244a-4a23-a446-e7220ed159cc}</Project>
-      <Name>Quintity.TestFramework.TestListener.TextFile</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="TestGolds\" />
     <Folder Include="TestOutput\" />
     <Folder Include="TestResults\" />
@@ -98,7 +88,8 @@
     <None Include="Connected Services\TestListenersService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="TestConfigs\TestListener.config">
+    <None Include="TestConfigs\ScratchListeners.config" />
+    <None Include="TestConfigs\TestListeners.config">
       <SubType>Designer</SubType>
     </None>
     <None Include="TestConfigs\TestProfile.config">

@@ -3,7 +3,7 @@
   <TestProperty i:type="TestSystemProperty">
     <Name>TestHome</Name>
     <Description>Default test home location</Description>
-    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.ListenersService.Test</Value>
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">C:\DevProjects\Quintity\Repos\Quintity.TestFramework.TestListenersService\Quintity.TestFramework.TestListenersService.Test</Value>
     <Active>true</Active>
   </TestProperty>
   <TestProperty i:type="TestSystemProperty">
@@ -52,6 +52,30 @@
     <Name>TestConfigs</Name>
     <Description>Default test configuration files (e.g., test listener configs, test profile configs, etc.)</Description>
     <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">[TESTHOME]\TestConfigs</Value>
+    <Active>true</Active>
+  </TestProperty>
+  <TestProperty>
+    <Name>TestRailUrl</Name>
+    <Description i:nil="true" />
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">https://quintity.testrail.io</Value>
+    <Active>true</Active>
+  </TestProperty>
+  <TestProperty>
+    <Name>TestRailUser</Name>
+    <Description i:nil="true" />
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">AutomationUser@quintity.com</Value>
+    <Active>true</Active>
+  </TestProperty>
+  <TestProperty>
+    <Name>TestRailPassword</Name>
+    <Description i:nil="true" />
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">P@ssw0rd!</Value>
+    <Active>true</Active>
+  </TestProperty>
+  <TestProperty>
+    <Name>TestRailProject</Name>
+    <Description i:nil="true" />
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">TestProject</Value>
     <Active>true</Active>
   </TestProperty>
 </TestPropertyCollection>
