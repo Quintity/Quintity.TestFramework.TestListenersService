@@ -75,7 +75,25 @@
   <TestProperty>
     <Name>TestRailProject</Name>
     <Description i:nil="true" />
-    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">TestProject</Value>
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">Starbucks B2B Uplift</Value>
+    <Active>true</Active>
+  </TestProperty>
+  <TestProperty>
+    <Name>ProductVersion</Name>
+    <Description i:nil="true" />
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">18.1</Value>
+    <Active>true</Active>
+  </TestProperty>
+  <TestProperty>
+    <Name>TargetEnvironment</Name>
+    <Description i:nil="true" />
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">Staging</Value>
+    <Active>true</Active>
+  </TestProperty>
+  <TestProperty>
+    <Name>Browser</Name>
+    <Description i:nil="true" />
+    <Value xmlns:d3p1="http://www.w3.org/2001/XMLSchema" i:type="d3p1:string">Chrome</Value>
     <Active>true</Active>
   </TestProperty>
 </TestPropertyCollection>

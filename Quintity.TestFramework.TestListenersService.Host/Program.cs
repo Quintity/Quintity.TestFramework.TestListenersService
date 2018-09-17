@@ -20,7 +20,7 @@ namespace Quintity.TestFramework.ListenersService.Host
             AppDomain currentDomain = AppDomain.CurrentDomain;
             currentDomain.UnhandledException += OnUnhandledException;
 
-            ListenerEvents.OnTestListenersComplete += ListenerEvents_OnTestListenersComplete;
+           // ListenerEvents.OnTestListenersComplete += ListenerEvents_OnTestListenersComplete;
 
             string @switch = args.Length > 0 ? args[0].ToUpper().Trim().Substring(0, 2) : null;
 

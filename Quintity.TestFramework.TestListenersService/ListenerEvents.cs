@@ -14,13 +14,13 @@ namespace Quintity.TestFramework.TestListenersService
      IncludeExceptionDetailInFaults = true, ConcurrencyMode = ConcurrencyMode.Reentrant)]
     public class ListenerEvents : IListenerEvents
     {
-        public delegate void TestListenersCompleteHandler(TerminationReason terminationReason, string message);
-        public static event TestListenersCompleteHandler OnTestListenersComplete;
+        //public delegate void TestListenersCompleteHandler(TerminationReason terminationReason, string message);
+        //public static event TestListenersCompleteHandler OnTestListenersComplete;
 
-        internal static void fireTestListenersCompleteEvent(TerminationReason terminationReason, string message)
-        {
-            OnTestListenersComplete?.Invoke(terminationReason, message);
-        }
+        //internal static void fireTestListenersCompleteEvent(TerminationReason terminationReason, string message)
+        //{
+        //    OnTestListenersComplete?.Invoke(terminationReason, message);
+        //}
 
         #region Data members
 
@@ -81,7 +81,7 @@ namespace Quintity.TestFramework.TestListenersService
                 stopWatch = new Stopwatch();
                 stopWatch.Start();
 #endif
-                VirtualUserEventsHandler.OnVirtualUserTestListenerEventsHandlerComplete += OnVirtualUserEventsHandlerComplete;
+               // VirtualUserEventsHandler.OnVirtualUserTestListenerEventsHandlerComplete += OnVirtualUserEventsHandlerComplete;
                 virtualUserEventHandlers = new Dictionary<string, VirtualUserEventsHandler>();
             }
 
@@ -263,16 +263,21 @@ namespace Quintity.TestFramework.TestListenersService
         private TestListenerDescriptor getListenerDescriptor(List<TestListenerDescriptor> testListeners, string assembly, string type) =>
           testListeners.Find(x => x.Assembly.Contains("") && x.Type.Equals(type));
 
-        private bool isComplete(TestListenerDescriptor testListener) => (!string.IsNullOrEmpty(testListener.Assembly) && !string.IsNullOrEmpty(testListener.Type)) ? true : false;
+        private bool isComplete(TestListenerDescriptor testListener) => (!string.IsNullOrEmpty(testListener.Assembly) &&
+            !string.IsNullOrEmpty(testListener.Type)) ? true : false;
 
-        private object bob = new object();
+        private object eventLock = new object();
 
         private void queueVirtualUserTestListenerEvent(string virtualUser, string method, params object[] parameters)
         {
+            if (method.Equals("OnTestExecutionComplete"))
+            {
+                int i = 1;
+            }
             // Create the listener event for queueing.
             var listenerEvent = new TestListenerEvent(virtualUser, method, parameters);
 
-            lock (bob)
+            lock (eventLock)
             {
                 if (virtualUser != null)
                 {
@@ -287,7 +292,7 @@ namespace Quintity.TestFramework.TestListenersService
                     virtualUserEventsHandler.EnqueueListenerEvent(listenerEvent);
                 }
 
-                logEvent.Info($"Listener event \"{method}\" ({virtualUser}) enqueued.");
+                logEvent.Debug($"Listener event \"{method}\" ({virtualUser}) enqueued.");
             }
         }
 

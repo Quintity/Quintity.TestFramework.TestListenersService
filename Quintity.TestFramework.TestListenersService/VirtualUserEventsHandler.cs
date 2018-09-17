@@ -78,7 +78,7 @@ namespace Quintity.TestFramework.TestListenersService
                     while (true)
                     {
                         listenerEvent = listenerEventQueue.Dequeue();
-                        logEvent.Info($"Listener event \"{listenerEvent.Method}\" ({VirtualUser}) dequeued.");
+                        logEvent.Debug($"Listener event \"{listenerEvent.Method}\" ({VirtualUser}) dequeued.");
 
                         if (!invokeListeners(listenerEvent))
                         {
@@ -104,11 +104,11 @@ namespace Quintity.TestFramework.TestListenersService
 
                             lock (fireLock)
                             {
-                            fireVirtualUserTestListenerEventsHandlerCompleteEvent(VirtualUser, new VirtualUserEventsHandlerCompleteArgs()
-                            {
-                                TerminationReason = terminationReason,
-                                Explanation = "Test listener execution complete.",
-                                StopAll = false
+                                fireVirtualUserTestListenerEventsHandlerCompleteEvent(VirtualUser, new VirtualUserEventsHandlerCompleteArgs()
+                                {
+                                    TerminationReason = terminationReason,
+                                    Explanation = "Test listener execution complete.",
+                                    StopAll = false
                                 });
                             }
 
@@ -133,7 +133,7 @@ namespace Quintity.TestFramework.TestListenersService
         {
             var @continue = true;
 
-            var testListeners = ListenerEvents.GetActiveListeners();
+            var activeTestListeners = ListenerEvents.GetActiveListeners();
 
             try
             {
@@ -143,7 +143,7 @@ namespace Quintity.TestFramework.TestListenersService
 #endif
                 var taskList = new List<Task>();
 
-                foreach (var testListener in testListeners)
+                foreach (var testListener in activeTestListeners)
                 {
                     taskList.Add(Task.Factory.StartNew(() => invokeListener(testListener, testListenerEvent.Method, testListenerEvent.Parameters)));
                 }
@@ -154,7 +154,7 @@ namespace Quintity.TestFramework.TestListenersService
                 stopWatch.Stop();
                 TimeSpan ts = stopWatch.Elapsed;
                 string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-                ////logEvent.Info($"Virtual user:  {testListenerEvent.VirtualUser}, listener event \"{testListenerEvent.Method}\" elapsed time:  {elapsedTime}");
+                logEvent.Debug($"Virtual user:  {testListenerEvent.VirtualUser}, listener event \"{testListenerEvent.Method}\" elapsed time:  {elapsedTime}");
 #endif
             }
             catch (AggregateException e)
@@ -163,7 +163,7 @@ namespace Quintity.TestFramework.TestListenersService
                 {
                     for (int i = 0; i < e.InnerExceptions.Count; i++)
                     {
-                        var testListener = ListenerEvents.GetListenerDescriptor(testListeners,
+                        var testListener = ListenerEvents.GetListenerDescriptor(activeTestListeners,
                             e.InnerExceptions[i].InnerException.TargetSite.DeclaringType.Module.Name,
                             e.InnerExceptions[i].InnerException.TargetSite.DeclaringType.FullName);
 
@@ -194,10 +194,11 @@ namespace Quintity.TestFramework.TestListenersService
 
         private Object getInstanceLock = new Object();
 
-
         private void invokeListener(TestListenerDescriptor testListenerDescriptor, string method, params object[] parameters)
         {
             TestListener testListenerInstance = null;
+
+            var testScriptObject = parameters[0] is TestScriptObject ? (TestScriptObject)parameters[0] : null;
 
             lock (getInstanceLock)
             {
@@ -207,7 +208,27 @@ namespace Quintity.TestFramework.TestListenersService
             testListenerInstance.VirtualUser = VirtualUser;
             Type type = testListenerInstance.GetType();
             MethodInfo methodInfo = type.GetMethod(method);
-            methodInfo.Invoke(testListenerInstance, parameters);
+
+            // If method does not have the NoOperation attribute applied, continue
+            if (isOperable(methodInfo))
+            {
+                if (testScriptObject is null)
+                {
+                    logEvent.Info($"Invoking listener \"{testListenerDescriptor.Name}\" event handler \"{method}\" ({VirtualUser})");
+                }
+                else
+                {
+                    logEvent.Info(
+                        $"Invoking listener \"{testListenerDescriptor.Name}\" event handler \"{method}\":  \"{testScriptObject.Title}\" ({VirtualUser})");
+                }
+               
+                methodInfo.Invoke(testListenerInstance, parameters);
+            }
+        }
+
+        private bool isOperable(MethodInfo methodInfo)
+        {
+            return methodInfo.GetCustomAttributes(typeof(NoOperationAttribute), true).Length == 0 ? true : false;
         }
 
         private TestListener getListenerInstance(TestListenerDescriptor testListenerDescriptor)

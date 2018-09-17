@@ -259,3 +259,24 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Archive
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Scratch
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/xxx.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Traditional Card Fulfillments.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/temp.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Starbucks B2B Master Suite.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Starbucks B2B Master Suite(Quintity).ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/ScratchSuite.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/sample.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/NewSuite.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Multibrowser.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Mixed-Order Card Fulfillments.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Miscellaneous.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Gift Card E2E Fulfillments.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Digital Card Multiple Address Import.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Digital (eGift) Card Fulfillments.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Co-Branded Card Fulfillment.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Business Card Fulfillments.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/Account Management.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/3.ste
+/Quintity.TestFramework.TestListenersService.Test/TestSuites/2.ste

@@ -8,7 +8,6 @@ using log4net;
 
 namespace Quintity.TestFramework.SampleListeners
 {
-
     public class ScratchListener1 : TestListener
     {
         private static readonly log4net.ILog LogEvent = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
