@@ -40,20 +40,6 @@ namespace Quintity.TestFramework.ListenersService.Host
             _serviceHost.AddServiceEndpoint(typeof(Quintity.TestFramework.TestListenersService.IListenerEvents),
                 netTcpBinding, "net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/");
 
-            //_serviceHost = new System.ServiceModel.ServiceHost(typeof(Quintity.TestFramework.TestListenersService.ListenerEvents),
-            //    new Uri("net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/"));
-
-            // Check to see if the service host already has a ServiceMetadataBehavior
-            ServiceMetadataBehavior smb = _serviceHost.Description.Behaviors.Find<ServiceMetadataBehavior>();
-
-            // If not, add one
-            //if (smb == null)
-            //{
-            //    smb = new ServiceMetadataBehavior();
-            //}
-
-            //_host.Faulted += new EventHandler(_host_Faulted);
-
             _serviceHost.Open();
         }
     }
