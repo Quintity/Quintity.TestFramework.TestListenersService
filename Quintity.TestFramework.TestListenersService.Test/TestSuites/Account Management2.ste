@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>2647fbee-850a-4cbe-8721-1417aa3057cd</SystemID>
+  <UserID />
+  <Title>Storefront Account Management</Title>
+  <Author>jmothers</Author>
+  <Created>2018-09-10T13:34:04-07:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>f64b7012-1d36-45be-a4f6-1c6fe2f9c26b</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>f3fbc4ba-a076-4e15-bf0a-23f2fcad620a</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>4fb04d68-5267-4fe2-845e-9dc68833ac4f</SystemID>
+      <UserID>70</UserID>
+      <Title>Create and verify light account</Title>
+      <Author>jmothers</Author>
+      <Created>2018-09-10T13:34:04-07:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>44d594d7-e5ca-495a-99fb-59a3f43589a6</SystemID>
+          <UserID />
+          <Title>Launch Storefront application</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>LaunchApplication</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Browser</DisplayName>
+                <Name>browserName</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[Browser]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Application url</DisplayName>
+                <Name>applicationUrl</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[StorefrontUrl]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Maximize</DisplayName>
+                <Name>maximizeApp</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[MaximizeAfterLaunch]</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>73e73435-5549-48e0-80e8-525d462a7f25</SystemID>
+          <UserID />
+          <Title>Navigate to Sign-in page</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>NavigateToSigninPage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>b4fa3094-350d-4bb2-a030-0bc44af8a4a3</SystemID>
+          <UserID />
+          <Title>Select "Create an account" link</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>CreateAccountFromSigninPage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>8b2a70ea-f44a-4ec1-b9f0-c7ff1429f819</SystemID>
+          <UserID />
+          <Title>Create new account</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.AccountManagement</TestClass>
+            <TestMethod>CreateAccountFromDatafile</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Addresses file path.</DisplayName>
+                <Name>dataFilePath</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[TestData]\PeopleAddress.txt</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Provide business details?</DisplayName>
+                <Name>businessDetails</Name>
+                <TypeAsString>System.Boolean</TypeAsString>
+                <ValueAsString>False</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>ea84b447-12b3-4a14-9f3a-dc6510d4b9f1</SystemID>
+          <UserID />
+          <Title>Sign out of Storefront application</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>SignOut</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>b6f363c9-d890-40f2-bb29-b0a9c182a861</SystemID>
+          <UserID />
+          <Title>Navigate to Sign-in page</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>NavigateToSigninPage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>c34842ee-5008-4df6-b58f-45da84799991</SystemID>
+          <UserID />
+          <Title>Sign in under newly created account</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>SignIn</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Email Address</DisplayName>
+                <Name>emailAddress</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[NewUserEmail]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Password</DisplayName>
+                <Name>password</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[NewUserPassword]</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>ab1615fa-d32b-4b6f-85e9-f76309ccd86d</SystemID>
+          <UserID />
+          <Title>Navigate to account Profile</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>NavigateToAccountProfilePage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>e123e57c-a0d9-4e80-af0f-94c142798b93</SystemID>
+          <UserID />
+          <Title>Verify account profile content</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.AccountManagement</TestClass>
+            <TestMethod>VerifyAccountProfileContent</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Light account?</DisplayName>
+                <Name>isLightAccount</Name>
+                <TypeAsString>System.Boolean</TypeAsString>
+                <ValueAsString>True</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>722c50bc-18fb-4119-abda-2b7c0bb96eac</SystemID>
+          <UserID />
+          <Title>Close application</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>True</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>ShutdownApplication</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>d4505a19-46d1-4ba3-890c-862e03c8de1f</SystemID>
+          <UserID />
+          <Title>Copy of Finalize account creation</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.AccountManagement</TestClass>
+            <TestMethod>FinalizeAccountCreation</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>06183a8b-4534-4952-98d6-19d6b11ea796</SystemID>
+      <UserID>69</UserID>
+      <Title>Create and verify account with business details</Title>
+      <Author>jmothers</Author>
+      <Created>2018-09-10T13:34:04-07:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>a45a1df8-d85b-4905-9d15-89ead9919ae2</SystemID>
+          <UserID />
+          <Title>Launch Storefront application</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>LaunchApplication</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Browser</DisplayName>
+                <Name>browserName</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[Browser]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Application url</DisplayName>
+                <Name>applicationUrl</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[StorefrontUrl]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Maximize</DisplayName>
+                <Name>maximizeApp</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[MaximizeAfterLaunch]</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>6ff6ab94-2e08-4b46-8814-61248d283c45</SystemID>
+          <UserID />
+          <Title>Navigate to Sign-in page</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>NavigateToSigninPage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>fd12897e-b074-478a-8923-01c6722bfa61</SystemID>
+          <UserID />
+          <Title>Select "Create an account" link</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>CreateAccountFromSigninPage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>f628276e-da13-4802-b5a7-87996e3642c0</SystemID>
+          <UserID />
+          <Title>Create new account</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.AccountManagement</TestClass>
+            <TestMethod>CreateAccountFromDatafile</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Addresses file path.</DisplayName>
+                <Name>dataFilePath</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[TestData]\PeopleAddress.txt</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Provide business details?</DisplayName>
+                <Name>businessDetails</Name>
+                <TypeAsString>System.Boolean</TypeAsString>
+                <ValueAsString>True</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>38ea97d2-9aae-4fa2-b72e-692aee6c891f</SystemID>
+          <UserID />
+          <Title>Sign out of Storefront application</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>SignOut</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>010e14aa-7afa-4961-8657-9ee67390b545</SystemID>
+          <UserID />
+          <Title>Navigate to Sign-in page</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>NavigateToSigninPage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>05022797-fe5c-4acc-a940-1b5f7e62a681</SystemID>
+          <UserID />
+          <Title>Sign in under newly created account</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>SignIn</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Email Address</DisplayName>
+                <Name>emailAddress</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[NewUserEmail]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Password</DisplayName>
+                <Name>password</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[NewUserPassword]</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>f590130f-258f-421a-a13f-23856fd7ab2f</SystemID>
+          <UserID />
+          <Title>Navigate to account Profile</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>NavigateToAccountProfilePage</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>a3e56d9a-663b-4d2b-be7c-804350cb0835</SystemID>
+          <UserID />
+          <Title>Verify account profile content</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.AccountManagement</TestClass>
+            <TestMethod>VerifyAccountProfileContent</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Light account?</DisplayName>
+                <Name>isLightAccount</Name>
+                <TypeAsString>System.Boolean</TypeAsString>
+                <ValueAsString>False</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>0e7a55e3-3b15-4810-9df5-505ca389bcb3</SystemID>
+          <UserID />
+          <Title>Close application</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>True</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>ShutdownApplication</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>214a2f21-49b4-446e-a978-9e9cdffc1b72</SystemID>
+          <UserID />
+          <Title>Finalize account creation</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.AccountManagement</TestClass>
+            <TestMethod>FinalizeAccountCreation</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+  </TestScriptObjects>
+  <FilePath>[TestSuites]\Account Management2.ste</FilePath>
+</TestSuite>

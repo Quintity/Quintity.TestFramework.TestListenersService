@@ -48,6 +48,13 @@ namespace Quintity.TestFramework.TestListenersService
 
         public bool ServiceAvailability() => true;
 
+        public int TestMethod(string testString)
+        {
+            logEvent.Info($"Test string:  {testString}");
+
+            return testString.Length;
+        }
+
         /// <summary>
         /// 
         /// </summary>

@@ -13,6 +13,9 @@ namespace Quintity.TestFramework.TestListenersService
         bool ServiceAvailability();
 
         [OperationContract]
+        int TestMethod(string testString);
+
+        [OperationContract]
         int InitializeService(List<TestListenerDescriptor> testListeners, TestProfile testProfile);
 
         [OperationContract(IsOneWay=true)]

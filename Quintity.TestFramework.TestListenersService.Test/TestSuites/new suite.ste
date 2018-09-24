@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>2f4c70cb-8426-4024-888b-051fc64fe229</SystemID>
+  <UserID>69</UserID>
+  <Title>new suite</Title>
+  <Author>jmothers</Author>
+  <Created>2018-09-15T13:06:35-07:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>e670cc0f-43fd-450e-816e-c72469faeeb1</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>20e4c474-2f1e-4398-8d67-9f81633cb80a</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>285fad24-78ba-43e8-850b-ab883fbb5254</SystemID>
+      <UserID />
+      <Title>Untitled test case</Title>
+      <Author>jmothers</Author>
+      <Created>2018-09-15T13:06:35-07:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>1f0abfa3-13b0-46e1-a59c-3d9287580990</SystemID>
+          <UserID />
+          <Title>Copy of Load purchase definition file</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>LoadPurchaseDefinition</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Purchase defintion path</DisplayName>
+                <Name>filePath</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[TestData]\PurchaseDefinitions\TraditionalPurchase.json</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>5217417c-4637-4cec-b865-5beb82f7f1ea</SystemID>
+          <UserID />
+          <Title>Copy of Launch Storefront application</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>LaunchApplication</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>Browser</DisplayName>
+                <Name>browserName</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[Browser]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Application url</DisplayName>
+                <Name>applicationUrl</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[StorefrontUrl]</ValueAsString>
+              </TestParameter>
+              <TestParameter>
+                <DisplayName>Maximize</DisplayName>
+                <Name>maximizeApp</Name>
+                <TypeAsString>System.String</TypeAsString>
+                <ValueAsString>[MaximizeAfterLaunch]</ValueAsString>
+              </TestParameter>
+            </TestParameters>
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>7409c344-91ab-4992-ad22-7bde4c10c98c</SystemID>
+          <UserID />
+          <Title>Copy of Close browser</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Starbucks.B2B.Tests.dll</TestAssembly>
+            <TestClass>Starbucks.B2B.Tests.Storefront.Common</TestClass>
+            <TestMethod>ShutdownApplication</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+  </TestScriptObjects>
+  <FilePath>[TestSuites]\new suite.ste</FilePath>
+</TestSuite>

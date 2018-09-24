@@ -2130,6 +2130,12 @@ namespace Quintity.TestFramework.TestListeners.TestConsole.TestListenerService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListenerEvents/ServiceAvailability", ReplyAction="http://tempuri.org/IListenerEvents/ServiceAvailabilityResponse")]
         System.Threading.Tasks.Task<bool> ServiceAvailabilityAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListenerEvents/TestMethod", ReplyAction="http://tempuri.org/IListenerEvents/TestMethodResponse")]
+        int TestMethod(string testString);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListenerEvents/TestMethod", ReplyAction="http://tempuri.org/IListenerEvents/TestMethodResponse")]
+        System.Threading.Tasks.Task<int> TestMethodAsync(string testString);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IListenerEvents/InitializeService", ReplyAction="http://tempuri.org/IListenerEvents/InitializeServiceResponse")]
         int InitializeService(Quintity.TestFramework.TestListeners.TestConsole.TestListenerService.TestListenerDescriptor[] testListeners, Quintity.TestFramework.TestListeners.TestConsole.TestListenerService.TestProfile testProfile);
         
@@ -2266,6 +2272,14 @@ namespace Quintity.TestFramework.TestListeners.TestConsole.TestListenerService {
         
         public System.Threading.Tasks.Task<bool> ServiceAvailabilityAsync() {
             return base.Channel.ServiceAvailabilityAsync();
+        }
+        
+        public int TestMethod(string testString) {
+            return base.Channel.TestMethod(testString);
+        }
+        
+        public System.Threading.Tasks.Task<int> TestMethodAsync(string testString) {
+            return base.Channel.TestMethodAsync(testString);
         }
         
         public int InitializeService(Quintity.TestFramework.TestListeners.TestConsole.TestListenerService.TestListenerDescriptor[] testListeners, Quintity.TestFramework.TestListeners.TestConsole.TestListenerService.TestProfile testProfile) {

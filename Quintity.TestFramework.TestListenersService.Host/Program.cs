@@ -61,6 +61,9 @@ namespace Quintity.TestFramework.ListenersService.Host
             // Begin processing queued journal entries
             consoleApp.Run();
 
+            //LogEvent.Info(string.Format("The Quintity ListenersService is running (\"{0}\").\n",
+            //        Common._serviceHost.Description.Endpoints[0].Address));
+
             manualReset.WaitOne();
 
             LogEvent.Info(string.Format("Quintity.TestFramework.ListenersService exiting."));

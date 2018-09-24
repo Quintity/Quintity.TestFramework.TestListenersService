@@ -23,6 +23,38 @@
           </RegistryKey>
         </Component>
 
+        <Component Id="Component.log4net.dll_933348858.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f62aac13e">
+          <File Id="log4net.dll_933348858" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\log4net.dll" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.Core.dll_1145093157.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71fdb5935c1">
+          <File Id="Quintity.TestFramework.Core.dll_1145093157" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.Core.dll" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.Runtime.dll_1996774916.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f2256b1dc">
+          <File Id="Quintity.TestFramework.Runtime.dll_1996774916" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.Runtime.dll" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.TestListenersService.dll_1214279153.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f8210ceca">
+          <File Id="Quintity.TestFramework.TestListenersService.dll_1214279153" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.dll" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.Core.dll.config_638034413.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71fb45b9332">
+          <File Id="Quintity.TestFramework.Core.dll.config_638034413" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.Core.dll.config" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.Runtime.dll.config_1843457553.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f1e90a882">
+          <File Id="Quintity.TestFramework.Runtime.dll.config_1843457553" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.Runtime.dll.config" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.TestListenersService.dll.config_1616541395.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f96b8ec6b">
+          <File Id="Quintity.TestFramework.TestListenersService.dll.config_1616541395" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.dll.config" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.TestListenersService.Host.exe.config_914775749.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f6622eb26">
+          <File Id="Quintity.TestFramework.TestListenersService.Host.exe.config_914775749" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.Host.exe.config" />
+        </Component>
+
         <Directory Id="Logs" Name="Logs">
 
           <Component Id="Component.EmptyDirectory.Logs.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f65050b63" KeyPath="yes">
@@ -49,6 +81,14 @@
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
       <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.Host.exe_1280457659.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.log4net.dll_933348858.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity.TestFramework.Core.dll_1145093157.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity.TestFramework.Runtime.dll_1996774916.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.dll_1214279153.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity.TestFramework.Core.dll.config_638034413.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity.TestFramework.Runtime.dll.config_1843457553.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.dll.config_1616541395.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.Host.exe.config_914775749.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.EmptyDirectory.Logs.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.EmptyDirectory.DesktopFolder.96f03431cd664a3e958de71fe7662bd3" />
     </Feature>

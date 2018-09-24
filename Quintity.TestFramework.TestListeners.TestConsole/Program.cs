@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ServiceModel;
+using System.Text;
 using Quintity.TestFramework.TestListeners.TestConsole.TestListenerService;
 
 namespace Quintity.TestFramework.TestListeners.TestConsole
@@ -12,22 +13,21 @@ namespace Quintity.TestFramework.TestListeners.TestConsole
             {
                 var bob = new Bob();
                 var client = bob.GetListenerEventsClient();
+                var fred = new string('x', 65200);
 
-                // var client = new ListenerEventsClient();
+                var length = client.TestMethod(fred);
 
                 var available = client.ServiceAvailability();
-
-                var state = client.State;
-
-                var xxx = client.InitializeService(null, null);
-
-                int i = 1;
-
             }
             catch (Exception e)
             {
-                int i = 1;
+                Console.WriteLine(e.ToString());
 
+            }
+            finally
+            {
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadLine();
             }
         }
     }

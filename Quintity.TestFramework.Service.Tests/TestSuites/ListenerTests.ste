@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<TestSuite status="Active">
+  <SystemID>ecb40a71-8056-42cd-974c-b2d583403f2f</SystemID>
+  <UserID />
+  <Title>ListenerTests</Title>
+  <Author>jmoth</Author>
+  <Created>2018-09-18T15:12:03-07:00</Created>
+  <Project />
+  <Reference />
+  <FunctionalArea />
+  <Description><![CDATA[]]></Description>
+  <TestProperties />
+  <TestPreprocessor>
+    <SystemID>7141a60e-b0cc-4cfc-b196-2b10e18e0960</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+    <OnFailure>Stop</OnFailure>
+  </TestPreprocessor>
+  <TestPostprocessor>
+    <SystemID>7ce4f4df-268d-4a3c-942b-195476829de4</SystemID>
+    <Title />
+    <Description><![CDATA[]]></Description>
+    <Description />
+    <Status>Incomplete</Status>
+    <IgnoreResult>False</IgnoreResult>
+    <TestType>Automated</TestType>
+    <TestAutomationDefinition>
+      <TestAssembly />
+      <TestClass />
+      <TestMethod />
+      <TestParameters />
+    </TestAutomationDefinition>
+  </TestPostprocessor>
+  <PostProcess />
+  <TestScriptObjects>
+    <TestScriptObject type="TestCase" status="Active">
+      <SystemID>7b4a7662-f42c-4aad-a15f-2508cf3547bd</SystemID>
+      <UserID />
+      <Title>Untitled test case</Title>
+      <Author>jmoth</Author>
+      <Created>2018-09-18T15:12:03-07:00</Created>
+      <FunctionalArea />
+      <Tags />
+      <Defects />
+      <KnownDefects>False</KnownDefects>
+      <Reference />
+      <OnFailure>Stop</OnFailure>
+      <Description><![CDATA[]]></Description>
+      <TestProperties />
+      <TestScriptObjects>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>90053384-0a19-4e63-b8e6-7c9c3ce4f9b2</SystemID>
+          <UserID />
+          <Title>Untitled test step</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.Service.Tests.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.Service.Tests.ServiceTests</TestClass>
+            <TestMethod>ListenersService</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+      </TestScriptObjects>
+    </TestScriptObject>
+  </TestScriptObjects>
+  <FilePath>[TestSuites]\ListenerTests.ste</FilePath>
+</TestSuite>
