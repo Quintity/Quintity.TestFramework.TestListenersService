@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="96f03431-cd66-4a3e-958d-e71ff7662bd4" Name="Quintity.TestFramework.TestListenersService" Language="1033" Codepage="Windows-1252" Version="1.0.0.0" UpgradeCode="96f03431-cd66-4a3e-958d-e71fe7662bd3" Manufacturer="jmoth">
+  <Product Id="96f03431-cd66-4a3e-958d-e71ff7662bd4" Name="Quintity.TestFramework.TestListenersService" Language="1033" Codepage="Windows-1252" Version="1.0.0.0" UpgradeCode="96f03431-cd66-4a3e-958d-e71fe7662bd3" Manufacturer="Quintity, LLC">
     <Package InstallerVersion="200" Compressed="yes" SummaryCodepage="Windows-1252" Languages="1033" />
     <Media Id="1" Cabinet="_...Framework.TestListenersService.cab" EmbedCab="yes" />
 
@@ -14,13 +14,17 @@
       <Directory Id="INSTALLDIR" Name="ABSOLUTEPATH">
 
         <Component Id="Component.Quintity.TestFramework.TestListenersService.Host.exe_1280457659.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f8e6de16b">
-          <File Id="Quintity.TestFramework.TestListenersService.Host.exe_1280457659" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.Host.exe">
-            <Shortcut Id="Shortcut.Quintity.TestFramework.TestListenersService.Host.exe_1280457659.Quintity_TestListeners_Service" WorkingDirectory="INSTALLDIR" Directory="DesktopFolder" Name="Quintity TestListeners Service.lnk" />
-          </File>
+          <File Id="Quintity.TestFramework.TestListenersService.Host.exe_1280457659" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.Host.exe" />
 
-          <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-            <RegistryValue Value="0" Type="string" KeyPath="yes" />
-          </RegistryKey>
+          <ServiceInstall Id="Quintity_TestListenersService" Name="Quintity TestListenersService" DisplayName="Quintity TestListenersService" Description="Quintity runtime listener test management service." Type="ownProcess" Start="auto" ErrorControl="normal" Arguments="/S" />
+
+          <ServiceControl Id="StopQuintity_TestListenersService" Name="Quintity TestListenersService" Stop="both" Wait="yes" />
+          <ServiceControl Id="StartQuintity_TestListenersService" Name="Quintity TestListenersService" Start="install" Wait="no" />
+          <ServiceControl Id="RemoveQuintity_TestListenersService" Name="Quintity TestListenersService" Remove="uninstall" Wait="yes" />
+        </Component>
+
+        <Component Id="Component.GenericDictionaryEditor.dll_488004645.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f25855e0b">
+          <File Id="GenericDictionaryEditor.dll_488004645" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\GenericDictionaryEditor.dll" />
         </Component>
 
         <Component Id="Component.log4net.dll_933348858.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f62aac13e">
@@ -39,14 +43,6 @@
           <File Id="Quintity.TestFramework.TestListenersService.dll_1214279153" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.dll" />
         </Component>
 
-        <Component Id="Component.Quintity.TestFramework.Core.dll.config_638034413.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71fb45b9332">
-          <File Id="Quintity.TestFramework.Core.dll.config_638034413" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.Core.dll.config" />
-        </Component>
-
-        <Component Id="Component.Quintity.TestFramework.Runtime.dll.config_1843457553.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f1e90a882">
-          <File Id="Quintity.TestFramework.Runtime.dll.config_1843457553" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.Runtime.dll.config" />
-        </Component>
-
         <Component Id="Component.Quintity.TestFramework.TestListenersService.dll.config_1616541395.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f96b8ec6b">
           <File Id="Quintity.TestFramework.TestListenersService.dll.config_1616541395" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.dll.config" />
         </Component>
@@ -55,45 +51,60 @@
           <File Id="Quintity.TestFramework.TestListenersService.Host.exe.config_914775749" Source="..\Quintity.TestFramework.TestListenersService.Host\bin\Debug\Quintity.TestFramework.TestListenersService.Host.exe.config" />
         </Component>
 
-        <Directory Id="Logs" Name="Logs">
+        <Component Id="Component.Uninstall_TestListenersService.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f38dee467">
+          <Shortcut Id="INSTALLDIR.Uninstall_TestListenersService" WorkingDirectory="System64Folder" Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]" Name="Uninstall TestListenersService.lnk" />
+          <RemoveFolder Id="INSTALLDIR" On="uninstall" />
 
-          <Component Id="Component.EmptyDirectory.Logs.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f65050b63" KeyPath="yes">
-            <RemoveFolder Id="Logs" On="uninstall" />
-          </Component>
-
-        </Directory>
-      </Directory>
-
-      <Directory Id="DesktopFolder" Name="DesktopFolder">
-
-        <Component Id="Component.EmptyDirectory.DesktopFolder.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f0889edb8">
           <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
             <RegistryValue Value="0" Type="string" KeyPath="yes" />
           </RegistryKey>
         </Component>
 
+        <Directory Id="DesktopFolder" Name="DesktopFolder">
+
+          <Component Id="Component.Quintity_TestLIsteners_Service.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71ff4ec429c">
+            <Shortcut Id="DesktopFolder.Quintity_TestLIsteners_Service" WorkingDirectory="INSTALLDIR" Target="[INSTALLDIR]Quintity.TestFramework.TestListenersService.Host.exe" Name="Quintity TestLIsteners Service.lnk" />
+
+            <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
+              <RegistryValue Value="0" Type="string" KeyPath="yes" />
+            </RegistryKey>
+          </Component>
+
+        </Directory>
+
+        <Directory Id="INSTALLDIR.Logs" Name="Logs">
+
+          <Component Id="Component.EmptyDirectory.INSTALLDIR.Logs.96f03431cd664a3e958de71fe7662bd3" Guid="96f03431-cd66-4a3e-958d-e71f30ea2eb0" KeyPath="yes">
+            <RemoveFolder Id="INSTALLDIR.Logs" On="uninstall" />
+          </Component>
+
+        </Directory>
       </Directory>
     </Directory>
 
+    <UI />
+
+    <CustomAction Id="Set_ARPINSTALLLOCATION" Property="ARPINSTALLLOCATION" Value="[INSTALLDIR]" Return="check" Execute="immediate" />
     <CustomAction Id="Set_DirAbsolutePath" Property="INSTALLDIR" Value="C:\Quintity.TestFramework.TestListenersService" />
 
     <Property Id="INSTALLDIR_ABSOLUTEPATH" Value="C:\Quintity.TestFramework.TestListenersService" />
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
       <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.Host.exe_1280457659.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.GenericDictionaryEditor.dll_488004645.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.log4net.dll_933348858.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.Quintity.TestFramework.Core.dll_1145093157.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.Quintity.TestFramework.Runtime.dll_1996774916.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.dll_1214279153.96f03431cd664a3e958de71fe7662bd3" />
-      <ComponentRef Id="Component.Quintity.TestFramework.Core.dll.config_638034413.96f03431cd664a3e958de71fe7662bd3" />
-      <ComponentRef Id="Component.Quintity.TestFramework.Runtime.dll.config_1843457553.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.dll.config_1616541395.96f03431cd664a3e958de71fe7662bd3" />
       <ComponentRef Id="Component.Quintity.TestFramework.TestListenersService.Host.exe.config_914775749.96f03431cd664a3e958de71fe7662bd3" />
-      <ComponentRef Id="Component.EmptyDirectory.Logs.96f03431cd664a3e958de71fe7662bd3" />
-      <ComponentRef Id="Component.EmptyDirectory.DesktopFolder.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Uninstall_TestListenersService.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.Quintity_TestLIsteners_Service.96f03431cd664a3e958de71fe7662bd3" />
+      <ComponentRef Id="Component.EmptyDirectory.INSTALLDIR.Logs.96f03431cd664a3e958de71fe7662bd3" />
     </Feature>
 
     <InstallExecuteSequence>
+      <Custom Action="Set_ARPINSTALLLOCATION" After="CostFinalize"> (NOT Installed) </Custom>
       <Custom Action="Set_DirAbsolutePath" Before="AppSearch">(NOT Installed) AND (UILevel &lt; 5) AND (INSTALLDIR = ABSOLUTEPATH)</Custom>
     </InstallExecuteSequence>
 
