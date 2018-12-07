@@ -16,7 +16,8 @@ namespace Quintity.TestFramework.ListenersService.Host
         {
             try
             {
-                //Common.ProcessJournalEntries();
+                Common.StartWebService();
+                Program.LogEvent.Info("Quintity.TestFramework.ListenersService started.");
             }
             catch (Exception e)
             {

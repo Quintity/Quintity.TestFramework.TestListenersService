@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ServiceModel;
-using System.ServiceModel.Description;
 
 namespace Quintity.TestFramework.ListenersService.Host
 {
@@ -25,7 +24,7 @@ namespace Quintity.TestFramework.ListenersService.Host
         internal static void startService()
         {
             var uri = new Uri("net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/");
-            var _serviceHost = new ServiceHost(typeof(TestListenersService.ListenerEvents));
+            var serviceHost = new ServiceHost(typeof(TestListenersService.ListenerEvents));
             var netTcpBinding = new NetTcpBinding();
 
             netTcpBinding.MaxReceivedMessageSize = int.MaxValue;
@@ -37,10 +36,10 @@ namespace Quintity.TestFramework.ListenersService.Host
             netTcpBinding.ReaderQuotas.MaxArrayLength = int.MaxValue; ;
             netTcpBinding.ReaderQuotas.MaxStringContentLength = int.MaxValue;
 
-            _serviceHost.AddServiceEndpoint(typeof(Quintity.TestFramework.TestListenersService.IListenerEvents),
+            serviceHost.AddServiceEndpoint(typeof(Quintity.TestFramework.TestListenersService.IListenerEvents),
                 netTcpBinding, "net.tcp://localhost:10101//Quintity.TestFramework.TestListenersService/");
 
-            _serviceHost.Open();
+            serviceHost.Open();
         }
     }
 }
